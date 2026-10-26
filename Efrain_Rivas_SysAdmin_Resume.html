@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Efrain Rivas - Senior Cloud Architect & Infrastructure Systems Engineer</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+  @page {
+    size: letter;
+    margin: 0.35in 0.4in 0.35in 0.4in;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+    font-size: 9.2pt;
+    line-height: 1.38;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a {
+    color: #0284c7;
+    text-decoration: none;
+  }
+
+  /* Header Section */
+  .header-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0b132b 0%, #1c2541 100%);
+    color: #ffffff;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .name-block h1 {
+    font-size: 23pt;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  .title-badge {
+    display: inline-block;
+    margin-top: 5px;
+    background: rgba(56, 189, 248, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    color: #38bdf8;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-family: 'JetBrains Mono', Consolas, monospace;
+  }
+
+  .status-tag {
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.35);
+    color: #34d399;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 7.8pt;
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    font-weight: 600;
+  }
+
+  .contact-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 8.2pt;
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    color: #cbd5e1;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .contact-bar a {
+    color: #38bdf8;
+    text-decoration: none;
+  }
+
+  /* Section Headers */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 11px;
+    margin-bottom: 7px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 4px;
+  }
+
+  .section-header .tag-prefix {
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    font-size: 8pt;
+    font-weight: 700;
+    color: #0284c7;
+    background: #e0f2fe;
+    padding: 2px 6px;
+    border-radius: 3px;
+  }
+
+  .section-header h2 {
+    font-size: 10.5pt;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  /* Summary */
+  .summary-text {
+    font-size: 8.8pt;
+    color: #334155;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+
+  /* Technical Matrix */
+  .tech-matrix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    margin-bottom: 8px;
+  }
+
+  .matrix-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    padding: 7px 10px;
+  }
+
+  .matrix-box-title {
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    font-size: 7.8pt;
+    font-weight: 700;
+    color: #0369a1;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .matrix-box-title::before {
+    content: "▶";
+    font-size: 6pt;
+    color: #0284c7;
+  }
+
+  .tech-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5px;
+  }
+
+  .pill {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    font-size: 7.3pt;
+    padding: 1.5px 5px;
+    border-radius: 3px;
+    font-weight: 500;
+  }
+
+  .pill.highlight {
+    background: #e0f2fe;
+    border-color: #7dd3fc;
+    color: #0369a1;
+    font-weight: 600;
+  }
+
+  /* Experience Cards */
+  .experience-item {
+    margin-bottom: 9px;
+    padding-left: 11px;
+    border-left: 2.5px solid #0284c7;
+    page-break-inside: avoid;
+  }
+
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+
+  .exp-role {
+    font-size: 9.4pt;
+    font-weight: 750;
+    color: #0f172a;
+  }
+
+  .exp-company {
+    color: #0284c7;
+    font-weight: 700;
+  }
+
+  .exp-meta {
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    font-size: 7.8pt;
+    color: #64748b;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .exp-bullets {
+    list-style: none;
+    margin-top: 3px;
+  }
+
+  .exp-bullets li {
+    position: relative;
+    padding-left: 13px;
+    margin-bottom: 3.5px;
+    font-size: 8.4pt;
+    color: #334155;
+    line-height: 1.34;
+  }
+
+  .exp-bullets li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #0284c7;
+    font-weight: 800;
+    font-size: 8.5pt;
+  }
+
+  .exp-bullets strong {
+    color: #0f172a;
+    font-weight: 700;
+  }
+
+  /* Projects & Open Source */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    margin-bottom: 6px;
+    page-break-inside: avoid;
+  }
+
+  .project-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 3px solid #0ea5e9;
+    border-radius: 4px;
+    padding: 6px 9px;
+  }
+
+  .project-title {
+    font-size: 8.6pt;
+    font-weight: 750;
+    color: #0f172a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+  }
+
+  .project-title a {
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    font-size: 7.2pt;
+    color: #0284c7;
+  }
+
+  .project-desc {
+    font-size: 8pt;
+    color: #475569;
+    line-height: 1.3;
+  }
+
+  /* Certifications */
+  .certs-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+    page-break-inside: avoid;
+  }
+
+  .cert-badge {
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    color: #166534;
+    padding: 3.5px 8px;
+    border-radius: 4px;
+    font-size: 7.8pt;
+    font-family: 'JetBrains Mono', Consolas, monospace;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .cert-badge::before {
+    content: "✓";
+    color: #15803d;
+    font-weight: 800;
+  }
+</style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header-card">
+    <div class="header-top">
+      <div class="name-block">
+        <h1>EFRAIN RIVAS</h1>
+        <div class="title-badge">Senior Cloud Architect & Infrastructure Systems Engineer</div>
+      </div>
+      <div class="status-tag">● ACTIVE DIRECTORY & AZURE ARCHITECT</div>
+    </div>
+    <div class="contact-bar">
+      <div class="contact-item">📍 Cary, NC</div>
+      <div class="contact-item">📞 (908) 845-3667</div>
+      <div class="contact-item">✉️ <a href="mailto:efrain.acetech@gmail.com">efrain.acetech@gmail.com</a></div>
+      <div class="contact-item">🌐 <a href="https://linkedin.com/in/efrain-rivas-93455a10">linkedin.com/in/efrain-rivas-93455a10</a></div>
+      <div class="contact-item">💻 <a href="https://github.com/digdast">github.com/digdast</a></div>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section-header">
+    <span class="tag-prefix">// 01</span>
+    <h2>Professional Profile & Architectural Focus</h2>
+  </div>
+  <p class="summary-text">
+    Results-driven <strong>Senior Cloud Architect and Systems Engineer</strong> with 20+ years of hands-on enterprise infrastructure experience designing, modernizing, and automating mission-critical systems across Microsoft Azure, Active Directory Domain Services, Linux, and multi-hypervisor virtualization clusters. Proven architectural track record deploying global multi-site Active Directory forests across 7 global data centers, engineering 5-stage financial CI/CD release pipelines with 99.999% SLA uptime, and implementing zero-touch endpoint provisioning via Microsoft Intune and Windows Autopilot. Creator of high-performance open-source automation tooling (Pulsearr, Renamarr, 50+ Intune remediation modules) with deep expertise in PowerShell, Python, and enterprise identity governance.
+  </p>
+
+  <!-- TECHNICAL MATRIX -->
+  <div class="section-header">
+    <span class="tag-prefix">// 02</span>
+    <h2>Core Technical Competencies & Systems Matrix</h2>
+  </div>
+  <div class="tech-matrix">
+    <div class="matrix-box">
+      <div class="matrix-box-title">CLOUD & DIRECTORY ARCHITECTURE</div>
+      <div class="tech-pills">
+        <span class="pill highlight">Microsoft Azure</span>
+        <span class="pill highlight">Entra ID (Azure AD)</span>
+        <span class="pill highlight">Active Directory DS</span>
+        <span class="pill">Hybrid Identity (PHS/PTA)</span>
+        <span class="pill">VNets / NSGs</span>
+        <span class="pill">Azure Files</span>
+        <span class="pill">Group Policy (GPO)</span>
+        <span class="pill">Exchange Online</span>
+        <span class="pill">M365 Tenant Admin</span>
+      </div>
+    </div>
+
+    <div class="matrix-box">
+      <div class="matrix-box-title">VIRTUALIZATION & HYPERVISORS</div>
+      <div class="tech-pills">
+        <span class="pill highlight">VMware vSphere / ESXi</span>
+        <span class="pill highlight">Linux KVM</span>
+        <span class="pill highlight">Citrix XenServer</span>
+        <span class="pill">XCP-NG</span>
+        <span class="pill">Microsoft Hyper-V</span>
+        <span class="pill">Proxmox VE</span>
+        <span class="pill">Azure Virtual Desktop (AVD)</span>
+        <span class="pill">FSLogix Profile Containers</span>
+        <span class="pill">SAN / NFS Clustering</span>
+      </div>
+    </div>
+
+    <div class="matrix-box">
+      <div class="matrix-box-title">AUTOMATION & DEVOPS ENGINEERING</div>
+      <div class="tech-pills">
+        <span class="pill highlight">PowerShell 7+</span>
+        <span class="pill highlight">Python (Asyncio/FastAPI)</span>
+        <span class="pill">Bash</span>
+        <span class="pill highlight">CI/CD Release Pipelines</span>
+        <span class="pill">Azure Runbooks</span>
+        <span class="pill">Git / GitHub Actions</span>
+        <span class="pill">REST APIs</span>
+        <span class="pill">Automated GPO Audits</span>
+        <span class="pill">Event-Driven Tasks</span>
+      </div>
+    </div>
+
+    <div class="matrix-box">
+      <div class="matrix-box-title">ENDPOINT & DEVICE GOVERNANCE</div>
+      <div class="tech-pills">
+        <span class="pill highlight">Microsoft Intune (MDM/MAM)</span>
+        <span class="pill highlight">Windows Autopilot</span>
+        <span class="pill">SCCM / MECM</span>
+        <span class="pill">Win32 Packaging (.intunewin)</span>
+        <span class="pill">Proactive Remediations</span>
+        <span class="pill">BitLocker Key Escrow</span>
+        <span class="pill">Patch Compliance Governance</span>
+        <span class="pill">Windows 10/11 & macOS</span>
+      </div>
+    </div>
+
+    <div class="matrix-box">
+      <div class="matrix-box-title">ZERO TRUST & IDENTITY SECURITY</div>
+      <div class="tech-pills">
+        <span class="pill highlight">Zero Trust Security</span>
+        <span class="pill highlight">Privileged Identity (PIM)</span>
+        <span class="pill">Conditional Access</span>
+        <span class="pill">SAML 2.0 / OAuth SSO</span>
+        <span class="pill">FIDO2 / MFA</span>
+        <span class="pill">SecOps Hardening</span>
+        <span class="pill">Defender for Cloud</span>
+        <span class="pill">LAPS Administration</span>
+      </div>
+    </div>
+
+    <div class="matrix-box">
+      <div class="matrix-box-title">ENTERPRISE NETWORKING & STORAGE</div>
+      <div class="tech-pills">
+        <span class="pill highlight">LAN/WAN Architecture</span>
+        <span class="pill highlight">Routing & Switching</span>
+        <span class="pill">DNS / DHCP Subnets</span>
+        <span class="pill">IPsec Site-to-Site VPN</span>
+        <span class="pill">WireGuard</span>
+        <span class="pill">Cloudflare Zero Trust</span>
+        <span class="pill">unRAID / TrueNAS NFS</span>
+        <span class="pill">VOIP Telephony & T1/T3</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section-header">
+    <span class="tag-prefix">// 03</span>
+    <h2>Enterprise Infrastructure Experience</h2>
+  </div>
+
+  <!-- JOB 1 -->
+  <div class="experience-item">
+    <div class="exp-header">
+      <div class="exp-role">Senior IT Infrastructure Consultant • <span class="exp-company">O.S. Consulting, Inc.</span></div>
+      <div class="exp-meta">Remote | 2025 – Present</div>
+    </div>
+    <ul class="exp-bullets">
+      <li><strong>Enterprise Cloud & Systems Advisory</strong>: Deliver senior-level infrastructure consulting across diverse enterprise client environments, designing scalable cloud architectures, virtual server platforms, and network topologies tailored to compliance and business requirements.</li>
+      <li><strong>Hybrid Identity & Entra ID Modernization</strong>: Architect and execute enterprise migrations from legacy on-premises Active Directory to Microsoft Entra ID (Azure AD), implementing Password Hash Sync (PHS), Seamless SSO, and risk-based Conditional Access policies.</li>
+      <li><strong>Modern Endpoint Transformation</strong>: Modernize legacy SCCM and GPO environments into cloud-native Microsoft Intune configurations; engineered automated Windows Autopilot deployment profiles reducing enterprise hardware onboarding time by over 80%.</li>
+      <li><strong>Tier 3 Root Cause Analysis (RCA)</strong>: Act as the principal escalation architect for complex hypervisor outages, directory replication failures, and network latency anomalies, authoring automated remediation runbooks to eliminate systemic recurring incidents.</li>
+    </ul>
+  </div>
+
+  <!-- JOB 2 -->
+  <div class="experience-item">
+    <div class="exp-header">
+      <div class="exp-role">Senior Systems Administrator & Infrastructure Architect • <span class="exp-company">BlueMatrix</span></div>
+      <div class="exp-meta">Durham, NC | 2018 – 2025</div>
+    </div>
+    <ul class="exp-bullets">
+      <li><strong>Global Multi-Site Active Directory Forest</strong>: Architected, built, and maintained enterprise Active Directory forest and domain infrastructure across 7 global data centers and regional offices; tuned multi-site replication topology, site-cost weighting, and distributed DNS to guarantee sub-second authentication worldwide.</li>
+      <li><strong>Multi-Hypervisor Virtualization Clusters</strong>: Administered and tuned high-density virtualization clusters across Linux KVM, Citrix XenServer, VMware vSphere/ESXi, and XCP-NG; orchestrated shared SAN/NFS arrays, vCPU scheduling, dynamic memory allocations, and automated snapshot replication.</li>
+      <li><strong>Azure Cloud Infrastructure & Automation</strong>: Spearheaded phased migrations transitioning mission-critical on-premises systems to Microsoft Azure; architected VNets, Network Security Groups (NSGs), Azure Virtual Machines, and custom Azure Automation Runbooks to govern automated compute scaling and patch compliance.</li>
+      <li><strong>Automated Identity Lifecycle Engineering</strong>: Developed robust PowerShell automation workflows connecting HR systems with AD DS and Entra ID, completely automating provisioning, RBAC group delegation, Microsoft 365 licensing, and zero-day offboarding security revocation.</li>
+    </ul>
+  </div>
+
+  <!-- JOB 3 -->
+  <div class="experience-item">
+    <div class="exp-header">
+      <div class="exp-role">DevOps Engineer & Systems Administrator • <span class="exp-company">StreamingEdge (Tradition America)</span></div>
+      <div class="exp-meta">New York, NY (Hybrid) | 2013 – 2018</div>
+    </div>
+    <ul class="exp-bullets">
+      <li><strong>Financial CI/CD Release Pipeline Engineering</strong>: Directed release engineering across a structured 5-stage deployment pipeline (DEV ➔ QA ➔ UAT ➔ Staging ➔ Production) for institutional financial trading systems, coordinating zero-downtime off-hours application releases and configuration verification.</li>
+      <li><strong>Mission-Critical Systems Reliability (99.999% SLA)</strong>: Engineered and administered high-availability Windows Server (2012–2022) and Linux (RHEL, CentOS, Ubuntu) server farms hosting high-throughput financial transaction engines, consistently maintaining five-nines (99.999%) SLA uptime.</li>
+      <li><strong>Clustered Enterprise Virtualization</strong>: Managed fault-tolerant virtualization clusters across Microsoft Hyper-V and VMware vSphere, configuring multi-NIC teaming, virtual switch isolation, host failover clustering, and disaster recovery replication.</li>
+      <li><strong>Enterprise Networking & Perimeter Security</strong>: Designed and maintained high-throughput LAN/WAN routing, core switching, hardware firewalls, site-to-site IPsec VPN tunnels, and enterprise telecommunications infrastructure.</li>
+    </ul>
+  </div>
+
+  <!-- JOB 4 -->
+  <div class="experience-item">
+    <div class="exp-header">
+      <div class="exp-role">Senior Network Administrator • <span class="exp-company">Digital Network Development</span></div>
+      <div class="exp-meta">Peoria, IL | 1999 – 2011</div>
+    </div>
+    <ul class="exp-bullets">
+      <li><strong>Enterprise Windows Server Operations</strong>: Commissioned, upgraded, and administered physical enterprise servers spanning Windows NT 4.0, 2000, 2003, and 2008, managing Active Directory, Group Policy Objects, DNS, DHCP, and enterprise storage.</li>
+      <li><strong>Telecommunications & Core Networking</strong>: Engineered, programmed, and maintained managed Cisco switches, routers, multi-building wireless links, T1/T3 telecommunications circuits, and enterprise VOIP telephony platforms.</li>
+      <li><strong>Disaster Recovery & Tier 3 Escalation</strong>: Managed enterprise tape and NAS backup routines, storage arrays, OS bare-metal imaging (WDS/MDT), and routine patch compliance across distributed server farms.</li>
+    </ul>
+  </div>
+
+  <!-- FLAGSHIP PROJECTS & OPEN SOURCE -->
+  <div class="section-header">
+    <span class="tag-prefix">// 04</span>
+    <h2>Flagship Engineering Projects & Open Source Tools</h2>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-title">
+        <span>Renamarr (Creator & Architect)</span>
+        <a href="https://github.com/digdast/renamarr">github.com/digdast/renamarr</a>
+      </div>
+      <div class="project-desc">
+        Engineered a high-performance, open-source media asset organizer with zero-config IMDb/TVMaze metadata suggestions, recursive UNC network share scanning, and an atomic 1-click batch undo ledger.
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">
+        <span>Pulsearr (Creator & Architect)</span>
+        <a href="https://github.com/digdast/pulsearr">github.com/digdast/pulsearr</a>
+      </div>
+      <div class="project-desc">
+        Architected an asynchronous Python media suite unifying Sonarr, Radarr, and Prowlarr into a single lightweight daemon; built with FastAPI, asyncio, and SQLite WAL mode (85MB idle RAM vs 1.2GB .NET stack).
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">
+        <span>Enterprise Intune Automation Catalog</span>
+        <a href="https://github.com/digdast/Intune-scripts">github.com/digdast/Intune-scripts</a>
+      </div>
+      <div class="project-desc">
+        Authored and open-sourced 58 production PowerShell automation modules covering Autopilot pre-provisioning, BitLocker cipher detection, driver crash telemetry, and proactive endpoint remediations.
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">
+        <span>Proxmox K3s Bare-Metal Kubernetes</span>
+        <a href="https://github.com/digdast/k3s-prox-lxc">github.com/digdast/k3s-prox-lxc</a>
+      </div>
+      <div class="project-desc">
+        Engineered an automated Ansible deployment framework provisioning lightweight K3s Kubernetes clusters across unprivileged Proxmox LXC containers with cgroups v2 resource delegation.
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS & CREDENTIALS -->
+  <div class="section-header">
+    <span class="tag-prefix">// 05</span>
+    <h2>Industry Certifications & Technical Credentials</h2>
+  </div>
+  <div class="certs-row">
+    <div class="cert-badge">Microsoft Certified: Azure Administrator Associate (AZ-104)</div>
+    <div class="cert-badge">Microsoft 365 Certified: Administrator Expert (MS-102)</div>
+    <div class="cert-badge">Microsoft Entra ID: Administration & Identity Security</div>
+    <div class="cert-badge">CompTIA Network+ Certified</div>
+    <div class="cert-badge">CompTIA Security+ Certified</div>
+    <div class="cert-badge">Inter-Tel University: Telecommunications & VOIP Systems</div>
+  </div>
+
+</body>
+</html>

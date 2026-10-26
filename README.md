@@ -3,7 +3,7 @@
 # ⚡ Efrain Rivas (`@digdast`)
 
 <a href="https://github.com/digdast">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Efrain+Rivas+(%40digdast)+%F0%9F%91%8B;Senior+Cloud+Architect+%26+Systems+Engineer;Creator+of+NovaFlix+%26+AegisDNS;Creator+of+Pulsearr+%26+Renamarr;Active+Directory+Forest+Architect+(7+Data+Centers)" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Efrain+Rivas+(%40digdast)+%F0%9F%91%8B;Senior+Cloud+Architect+%26+Systems+Engineer;HA+Kubernetes+%26+Cloud+Orchestrator;Creator+of+NovaFlix+%26+AegisDNS;Creator+of+Pulsearr+%26+Renamarr;Active+Directory+Forest+Architect+(7+Data+Centers)" alt="Typing SVG" />
 </a>
 
 <p align="center">
@@ -36,8 +36,11 @@
 
 ### 👨‍💻 Executive Systems Profile
 
-I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressive enterprise infrastructure experience designing, modernizing, and automating mission-critical platforms across Microsoft Azure, Active Directory Domain Services, Linux, and multi-hypervisor environments.
+I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressive enterprise infrastructure experience designing, modernizing, and automating mission-critical platforms across Microsoft Azure, Kubernetes, Active Directory Domain Services, Linux, and multi-hypervisor environments.
 
+- ☸️ **HA Kubernetes & Cluster Ingress**: Orchestrated multi-node Kubernetes clusters with control-plane replication, worker node pools, Traefik ingress, shared persistent NFS storage, and automated 4-replica zero-downtime microservices ([resume.ertechlab.com](https://resume.ertechlab.com)).
+- 🖥️ **Proxmox VE & Hypervisor Fleet Optimization**: Multi-node HA Proxmox VE clustering with hardware passthrough, zero-downtime memory tuning (balloon contention eliminated), and enterprise backup automation.
+- 🛡️ **DNSSEC & Automated SSL/TLS Lifecycle**: Tri-node synchronized Pi-hole v6 and Unbound recursive DNSSEC cluster with automated Cloudflare DNS-01 Let's Encrypt wildcard certificate renewals.
 - 🌐 **Global Active Directory Architecture**: Designed, built, and maintained the enterprise Active Directory forest and multi-site replication topology across **7 global data centers** and regional offices for BlueMatrix.
 - 🎬 **Creator of [NovaFlix](https://github.com/digdast/novaflix)**: Sovereign open-source media streaming platform & home theater engine (Plex/Jellyfin alternative) with 4K HDR Direct Play, HTTP 206 Range streaming, built-in remote access, and SyncPlay.
 - 🛡️ **Creator of [AegisDNS](https://github.com/digdast/aegisdns)**: Recursive DNS resolver & RFC 8484 DNS-over-HTTPS (DoH) engine traversing ICANN root hints with zero telemetry, 227k+ threat sinkhole rules, and real-time cyber command center.

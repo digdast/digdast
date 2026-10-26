@@ -50,14 +50,24 @@ I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressi
 <table align="center" width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/digdast/pulsearr">⚡ Pulsearr</a></h3>
+      <h3 align="center"><a href="https://github.com/digdast/renamarr">⚡ Renamarr</a></h3>
       <p align="center">
         <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" />
         <img src="https://img.shields.io/badge/FastAPI-Async-009688?style=flat-square&logo=fastapi&logoColor=white" />
-        <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" />
+        <img src="https://img.shields.io/badge/FileBot-Alternative-orange?style=flat-square" />
+      </p>
+      <p>Next-Gen Interactive Media Renamer & Organizer for <b>Movies & TV Shows</b>. Free, modern alternative to FileBot for Plex, Jellyfin & Emby. Features IMDb/TVMaze metadata matching, recursive UNC network share scanning, interactive side-by-side diff table, and 1-click batch undo.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/digdast/pulsearr">⚡ Pulsearr</a></h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/Unified-Media%20PVR-brightgreen?style=flat-square" />
       </p>
       <p>Next-Gen Asynchronous Python Media PVR combining <b>Sonarr (TV)</b>, <b>Radarr (Movies)</b>, and <b>Prowlarr (Trackers Hub)</b> into a unified ultra-fast daemon. 10x memory reduction, remote qBittorrent integration, and async SQLite WAL mode.</p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3 align="center"><a href="https://github.com/digdast/Intune-scripts">📦 Intune-scripts</a></h3>
       <p align="center">
@@ -66,8 +76,6 @@ I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressi
       </p>
       <p>Comprehensive enterprise catalog of <b>58 production Intune automation scripts</b> spanning Autopilot, BitLocker encryption, driver management, NDES certificates, Win32 apps, and Graph API administration.</p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3 align="center"><a href="https://github.com/digdast/Intune-Remediation-scripts">🔧 Intune-Remediation-scripts</a></h3>
       <p align="center">
@@ -75,14 +83,6 @@ I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressi
         <img src="https://img.shields.io/badge/Self--Healing-Endpoints-success?style=flat-square" />
       </p>
       <p>Production proactive remediation packages for self-healing enterprise Windows fleets. Includes BSOD log shipping, BIOS password enforcement, driver crash remediations, low-disk sensors, and toast notifications.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/digdast/powershellIntune">🔑 powershellIntune</a></h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Entra%20ID-Governance-blue?style=flat-square&logo=microsoft-azure" />
-        <img src="https://img.shields.io/badge/MFA-Thread--Safe%20Audit-red?style=flat-square" />
-      </p>
-      <p>Enterprise identity governance scripts for Entra ID (Azure AD), automated license consumption monitoring, runspace-accelerated thread-safe SMS/MFA compliance audits, and Windows OEM key activation migration.</p>
     </td>
   </tr>
 </table>

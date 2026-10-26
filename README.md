@@ -13,6 +13,9 @@
   <a href="https://raw.githubusercontent.com/digdast/digdast/main/Efrain_Rivas_SysAdmin_Resume.docx">
     <img src="https://img.shields.io/badge/Download-Word%20Resume%20(.docx)-2563EB?style=for-the-badge&logo=microsoft-word&logoColor=white" />
   </a>
+  <a href="https://resume.ertechlab.com" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Resume-resume.ertechlab.com-059669?style=for-the-badge&logo=nginx&logoColor=white" />
+  </a>
   <a href="RESUME.md">
     <img src="https://img.shields.io/badge/View-Online%20Markdown-0284C7?style=for-the-badge&logo=markdown&logoColor=white" />
   </a>

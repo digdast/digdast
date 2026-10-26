@@ -3,26 +3,45 @@
 # ⚡ Efrain Rivas (`@digdast`)
 
 <a href="https://github.com/digdast">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Efrain+Rivas+(%40digdast)+%F0%9F%91%8B;Cloud+%26+Infrastructure+Systems+Engineer;Enterprise+Microsoft+Intune+%26+Entra+ID+Specialist;Creator+of+Pulsearr+-+Next-Gen+Unified+Media+Suite;Kubernetes+%26+Proxmox+Homelab+Architect" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Efrain+Rivas+(%40digdast)+%F0%9F%91%8B;Senior+Cloud+Architect+%26+Systems+Engineer;Enterprise+Microsoft+Intune+%26+Entra+ID+Specialist;Creator+of+Pulsearr+-+Next-Gen+Unified+Media+Suite;Kubernetes+%26+Proxmox+Homelab+Architect" alt="Typing SVG" />
 </a>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Location-Cary%2C%20NC-blue?style=for-the-badge&logo=google-maps&logoColor=white" />
-  <img src="https://img.shields.io/badge/Focus-Cloud%20%26%20Systems%20Architecture-brightgreen?style=for-the-badge&logo=azure-devops&logoColor=white" />
-  <img src="https://img.shields.io/badge/Flagship-Pulsearr%20PVR-orange?style=for-the-badge&logo=python&logoColor=white" />
+  <a href="RESUME.md">
+    <img src="https://img.shields.io/badge/Resume-Executive%20CV-2563EB?style=for-the-badge&logo=read-the-docs&logoColor=white" />
+  </a>
+  <a href="Efrain_Rivas_Executive_Resume.docx">
+    <img src="https://img.shields.io/badge/Download-Word%20Resume%20(.docx)-1D4ED8?style=for-the-badge&logo=microsoft-word&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/efrain-rivas-93455a10">
+    <img src="https://img.shields.io/badge/LinkedIn-Efrain%20Rivas-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:efrain.acetech@gmail.com">
+    <img src="https://img.shields.io/badge/Email-efrain.acetech%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Location-Cary%2C%20NC-blue?style=flat-square&logo=google-maps&logoColor=white" />
+  <img src="https://img.shields.io/badge/Experience-20%2B%20Years-success?style=flat-square" />
+  <img src="https://img.shields.io/badge/Status-Open%20to%20Senior%20Roles%20%7C%20Consulting-brightgreen?style=flat-square" />
 </p>
 
 </div>
 
 ---
 
-### 👨‍💻 About Me
+### 👨‍💻 Executive Profile
 
-I am a **Senior Cloud & Systems Engineer** specializing in enterprise endpoint management, identity governance, and infrastructure automation. My work focuses on building robust, scalable automation across the modern Microsoft ecosystem (Intune, Entra ID, Microsoft Graph) and high-performance hybrid infrastructure (Kubernetes, Proxmox VE, Ansible, Terraform).
+I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressive enterprise experience designing, modernizing, and automating high-availability infrastructure across Microsoft Azure, Active Directory, Entra ID, Linux, and multi-hypervisor environments.
 
-- 🚀 **Creator of [Pulsearr](https://github.com/digdast/pulsearr)**: Next-gen asynchronous Python media suite unifying Sonarr, Radarr, and Prowlarr into a single, blazing-fast, lightweight daemon with async SQLite WAL mode.
-- 🛡️ **Enterprise Automation**: Architecting zero-touch Windows/macOS deployments via Autopilot, proactive endpoint remediations, and identity governance scripts.
-- ⚡ **Homelab Enthusiast**: Designing containerized clusters (K3s, Docker Swarm), Proxmox VE hypervisors, Cloudflare Zero Trust ingress tunnels, and custom Voron 2.4 3D printer hardware.
+- 🌐 **Global Active Directory Architecture**: Designed, built, and deployed the enterprise Active Directory forest and multi-site replication topology across **7 global data centers** and regional offices for BlueMatrix.
+- 🚀 **Creator of [Pulsearr](https://github.com/digdast/pulsearr)**: Next-gen asynchronous Python media suite unifying Sonarr, Radarr, and Prowlarr into a single ultra-fast daemon idling under 85MB RAM with SQLite in WAL mode.
+- ⚡ **Financial DevOps & Release Engineering**: Directed release management across a 5-stage deployment pipeline (DEV ➔ QA ➔ UAT ➔ Staging ➔ PROD) with **99.999% SLA uptime** for financial trading systems at StreamingEdge (Tradition).
+- 📦 **Enterprise Endpoint Automation**: Authored an open-source catalog of **58 production Intune & Graph automation scripts** covering zero-touch Windows Autopilot, BitLocker encryption, driver hygiene, and proactive self-healing remediations.
+- 🖥️ **Virtualization Across 5 Stacks**: Deep production administration across VMware vSphere, Linux KVM, Citrix XenServer, XCP-NG, and Microsoft Hyper-V.
+
+📄 **[View Full Executive Resume Online](RESUME.md)** | 📥 **[Download Word Resume (.docx)](Efrain_Rivas_Executive_Resume.docx)**
 
 ---
 
@@ -37,7 +56,7 @@ I am a **Senior Cloud & Systems Engineer** specializing in enterprise endpoint m
         <img src="https://img.shields.io/badge/FastAPI-Async-009688?style=flat-square&logo=fastapi&logoColor=white" />
         <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" />
       </p>
-      <p>Next-Gen Asynchronous Python Media PVR combining <b>Sonarr (TV)</b>, <b>Radarr (Movies)</b>, and <b>Prowlarr (Trackers Hub)</b> into a unified ultra-fast daemon. Better, lighter, and faster with remote qBittorrent integration and async SQLite WAL mode.</p>
+      <p>Next-Gen Asynchronous Python Media PVR combining <b>Sonarr (TV)</b>, <b>Radarr (Movies)</b>, and <b>Prowlarr (Trackers Hub)</b> into a unified ultra-fast daemon. 10x memory reduction, remote qBittorrent integration, and async SQLite WAL mode.</p>
     </td>
     <td width="50%" valign="top">
       <h3 align="center"><a href="https://github.com/digdast/Intune-scripts">📦 Intune-scripts</a></h3>
@@ -74,31 +93,28 @@ I am a **Senior Cloud & Systems Engineer** specializing in enterprise endpoint m
 
 <div align="center">
 
-#### Languages & Scripting
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" />
-<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-<img src="https://img.shields.io/badge/HCL-Packer%2FTerraform-844FBA?style=for-the-badge&logo=hashicorp&logoColor=white" />
-<img src="https://img.shields.io/badge/SQL-SQLite%20WAL-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
-
-#### Cloud & Enterprise Systems
-<img src="https://img.shields.io/badge/Microsoft%20Intune-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" />
+#### Cloud Platforms & Identity
+<img src="https://img.shields.io/badge/Microsoft%20Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" />
 <img src="https://img.shields.io/badge/Microsoft%20Entra%20ID-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white" />
+<img src="https://img.shields.io/badge/Active%20Directory%20(7%20Data%20Centers)-0078D4?style=for-the-badge&logo=windows&logoColor=white" />
+<img src="https://img.shields.io/badge/Microsoft%20Intune-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" />
 <img src="https://img.shields.io/badge/Microsoft%20Graph-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" />
-<img src="https://img.shields.io/badge/Cloudflare%20Zero%20Trust-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" />
 
-#### Infrastructure as Code & Containers
+#### Virtualization & Hypervisors
+<img src="https://img.shields.io/badge/VMware%20vSphere%20(ESXi)-607078?style=for-the-badge&logo=vmware&logoColor=white" />
+<img src="https://img.shields.io/badge/Linux%20KVM-FF6600?style=for-the-badge&logo=linux&logoColor=white" />
+<img src="https://img.shields.io/badge/Citrix%20XenServer%20%2F%20XCP--NG-0088CC?style=for-the-badge&logo=citrix&logoColor=white" />
+<img src="https://img.shields.io/badge/Microsoft%20Hyper--V-0078D4?style=for-the-badge&logo=windows&logoColor=white" />
+<img src="https://img.shields.io/badge/Proxmox%20VE-E57000?style=for-the-badge&logo=proxmox&logoColor=white" />
+
+#### Scripting & DevOps Automation
+<img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" />
+<img src="https://img.shields.io/badge/Python%20(Asyncio%20%7C%20FastAPI)-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+<img src="https://img.shields.io/badge/CI%2FCD%20Pipelines-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
 <img src="https://img.shields.io/badge/Kubernetes%20(K3s)-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
 <img src="https://img.shields.io/badge/Docker%20%26%20Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 <img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" />
-<img src="https://img.shields.io/badge/HashiCorp%20Packer-02A8EF?style=for-the-badge&logo=packer&logoColor=white" />
-<img src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white" />
-
-#### Virtualization & Homelab
-<img src="https://img.shields.io/badge/Proxmox%20VE-E57000?style=for-the-badge&logo=proxmox&logoColor=white" />
-<img src="https://img.shields.io/badge/unRAID%20NFS-FF8C00?style=for-the-badge&logo=unraid&logoColor=white" />
-<img src="https://img.shields.io/badge/OPNsense%20WireGuard-D94A38?style=for-the-badge&logo=opnsense&logoColor=white" />
-<img src="https://img.shields.io/badge/Voron%202.4%20(Klipper)-ED333B?style=for-the-badge&logo=3d&logoColor=white" />
 
 </div>
 
@@ -111,12 +127,8 @@ I am a **Senior Cloud & Systems Engineer** specializing in enterprise endpoint m
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=digdast&theme=tokyonight&hide_border=false" width="48%" />
 </div>
 
-<div align="center" style="margin-top: 15px;">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=digdast&layout=compact&theme=tokyonight&hide_border=false&langs_count=8" width="60%" />
-</div>
-
 ---
 
 <div align="center">
-  ⭐ <i>Feel free to explore my repositories and drop a star if you find anything useful!</i> ⭐
+  ⭐ <i>Feel free to explore my repositories or reach out for senior roles & consulting!</i> ⭐
 </div>

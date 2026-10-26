@@ -359,7 +359,7 @@
     <h2>Professional Profile & Architectural Focus</h2>
   </div>
   <p class="summary-text">
-    Results-driven <strong>Senior Cloud Architect and Systems Engineer</strong> with 20+ years of hands-on enterprise infrastructure experience designing, modernizing, and automating mission-critical systems across Microsoft Azure, Active Directory Domain Services, Linux, and multi-hypervisor virtualization clusters. Proven architectural track record deploying global multi-site Active Directory forests across 7 global data centers, engineering 5-stage financial CI/CD release pipelines with 99.999% SLA uptime, and implementing zero-touch endpoint provisioning via Microsoft Intune and Windows Autopilot. Creator of high-performance open-source automation tooling (Pulsearr, Renamarr, 50+ Intune remediation modules) with deep expertise in PowerShell, Python, and enterprise identity governance.
+    Results-driven <strong>Senior Cloud Architect and Systems Engineer</strong> with 20+ years of hands-on enterprise infrastructure experience designing, modernizing, and automating mission-critical systems across Microsoft Azure, Active Directory Domain Services, Linux, and multi-hypervisor virtualization clusters. Proven architectural track record deploying global multi-site Active Directory forests across 7 global data centers, engineering 5-stage financial CI/CD release pipelines with 99.999% SLA uptime, and implementing zero-touch endpoint provisioning via Microsoft Intune and Windows Autopilot. Creator of high-performance open-source platforms and engineering tools (<strong>NovaFlix, AegisDNS, Pulsearr, Renamarr, Proxmox Cluster Suite, 58+ Intune remediation modules</strong>) with deep expertise in PowerShell, Python, network security, and enterprise identity governance.
   </p>
 
   <!-- TECHNICAL MATRIX -->
@@ -405,11 +405,11 @@
         <span class="pill highlight">Python (Asyncio/FastAPI)</span>
         <span class="pill">Bash</span>
         <span class="pill highlight">CI/CD Release Pipelines</span>
+        <span class="pill">Docker Containers</span>
         <span class="pill">Azure Runbooks</span>
         <span class="pill">Git / GitHub Actions</span>
-        <span class="pill">REST APIs</span>
+        <span class="pill">REST APIs & WebSockets</span>
         <span class="pill">Automated GPO Audits</span>
-        <span class="pill">Event-Driven Tasks</span>
       </div>
     </div>
 
@@ -428,12 +428,13 @@
     </div>
 
     <div class="matrix-box">
-      <div class="matrix-box-title">ZERO TRUST & IDENTITY SECURITY</div>
+      <div class="matrix-box-title">ZERO TRUST & CYBERSECURITY</div>
       <div class="tech-pills">
         <span class="pill highlight">Zero Trust Security</span>
         <span class="pill highlight">Privileged Identity (PIM)</span>
         <span class="pill">Conditional Access</span>
         <span class="pill">SAML 2.0 / OAuth SSO</span>
+        <span class="pill">DNS Threat Sinkholes</span>
         <span class="pill">FIDO2 / MFA</span>
         <span class="pill">SecOps Hardening</span>
         <span class="pill">Defender for Cloud</span>
@@ -445,11 +446,12 @@
       <div class="matrix-box-title">ENTERPRISE NETWORKING & STORAGE</div>
       <div class="tech-pills">
         <span class="pill highlight">LAN/WAN Architecture</span>
-        <span class="pill highlight">Routing & Switching</span>
-        <span class="pill">DNS / DHCP Subnets</span>
-        <span class="pill">IPsec Site-to-Site VPN</span>
-        <span class="pill">WireGuard</span>
+        <span class="pill highlight">DNS-over-HTTPS (RFC 8484)</span>
+        <span class="pill highlight">Recursive DNS Resolvers</span>
+        <span class="pill">HTTP Range Streaming</span>
+        <span class="pill">WireGuard & IPsec VPN</span>
         <span class="pill">Cloudflare Zero Trust</span>
+        <span class="pill">Routing & Switching</span>
         <span class="pill">unRAID / TrueNAS NFS</span>
         <span class="pill">VOIP Telephony & T1/T3</span>
       </div>
@@ -525,11 +527,20 @@
   <div class="projects-grid">
     <div class="project-card">
       <div class="project-title">
-        <span>Renamarr (Creator & Architect)</span>
-        <a href="https://github.com/digdast/renamarr">github.com/digdast/renamarr</a>
+        <span>NovaFlix (Creator & Architect)</span>
+        <a href="https://github.com/digdast/novaflix">github.com/digdast/novaflix</a>
       </div>
       <div class="project-desc">
-        Engineered a high-performance, open-source media asset organizer with zero-config IMDb/TVMaze metadata suggestions, recursive UNC network share scanning, and an atomic 1-click batch undo ledger.
+        Sovereign open media platform & home theater engine (Plex/Jellyfin alternative) with 4K HDR Direct Play, HTTP 206 Range streaming, built-in remote access, and SyncPlay.
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">
+        <span>AegisDNS (Creator & Architect)</span>
+        <a href="https://github.com/digdast/aegisdns">github.com/digdast/aegisdns</a>
+      </div>
+      <div class="project-desc">
+        Recursive DNS resolver & RFC 8484 DNS-over-HTTPS (DoH) engine traversing root hints with zero telemetry, 227k+ threat sinkhole rules, and real-time cyber UI.
       </div>
     </div>
     <div class="project-card">
@@ -538,7 +549,25 @@
         <a href="https://github.com/digdast/pulsearr">github.com/digdast/pulsearr</a>
       </div>
       <div class="project-desc">
-        Architected an asynchronous Python media suite unifying Sonarr, Radarr, and Prowlarr into a single lightweight daemon; built with FastAPI, asyncio, and SQLite WAL mode (85MB idle RAM vs 1.2GB .NET stack).
+        Architected an asynchronous Python media suite unifying Sonarr, Radarr, and Prowlarr into a single lightweight daemon; built with FastAPI, asyncio, and SQLite WAL mode (85MB idle RAM).
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">
+        <span>Renamarr (Creator & Architect)</span>
+        <a href="https://github.com/digdast/renamarr">github.com/digdast/renamarr</a>
+      </div>
+      <div class="project-desc">
+        Engineered a high-performance, open-source media asset organizer with zero-config IMDb/TVMaze metadata suggestions, remote CLI agent, and an atomic 1-click batch undo ledger.
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-title">
+        <span>Proxmox Cluster Suite</span>
+        <a href="https://github.com/digdast/proxmox-cluster-suite">github.com/digdast/proxmox-cluster-suite</a>
+      </div>
+      <div class="project-desc">
+        Automated enterprise optimization, no-sub repo activation, nag removal, CPU governor, and real-time web monitoring for 5-node Proxmox VE HA clusters.
       </div>
     </div>
     <div class="project-card">
@@ -547,16 +576,7 @@
         <a href="https://github.com/digdast/Intune-scripts">github.com/digdast/Intune-scripts</a>
       </div>
       <div class="project-desc">
-        Authored and open-sourced 58 production PowerShell automation modules covering Autopilot pre-provisioning, BitLocker cipher detection, driver crash telemetry, and proactive endpoint remediations.
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-title">
-        <span>Proxmox K3s Bare-Metal Kubernetes</span>
-        <a href="https://github.com/digdast/k3s-prox-lxc">github.com/digdast/k3s-prox-lxc</a>
-      </div>
-      <div class="project-desc">
-        Engineered an automated Ansible deployment framework provisioning lightweight K3s Kubernetes clusters across unprivileged Proxmox LXC containers with cgroups v2 resource delegation.
+        Authored and open-sourced 58 production PowerShell automation modules covering Autopilot pre-provisioning, BitLocker cipher detection, and proactive endpoint remediations.
       </div>
     </div>
   </div>

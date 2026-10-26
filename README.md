@@ -3,7 +3,7 @@
 # ⚡ Efrain Rivas (`@digdast`)
 
 <a href="https://github.com/digdast">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Efrain+Rivas+(%40digdast)+%F0%9F%91%8B;Senior+Cloud+Architect+%26+Systems+Engineer;Enterprise+Microsoft+Intune+%26+Entra+ID+Specialist;Creator+of+Renamarr+%26+Pulsearr+Media+Suites;Active+Directory+Forest+Architect+(7+Data+Centers)" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Efrain+Rivas+(%40digdast)+%F0%9F%91%8B;Senior+Cloud+Architect+%26+Systems+Engineer;Enterprise+Microsoft+Intune+%26+Entra+ID+Specialist;Creator+of+Renamarr+%26+Pulsearr+Media+Suites;Proxmox+5-Node+HA+Cluster+Architect" alt="Typing SVG" />
 </a>
 
 <p align="center">
@@ -36,11 +36,11 @@
 I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressive enterprise infrastructure experience designing, modernizing, and automating mission-critical platforms across Microsoft Azure, Active Directory Domain Services, Linux, and multi-hypervisor environments.
 
 - 🌐 **Global Active Directory Architecture**: Designed, built, and maintained the enterprise Active Directory forest and multi-site replication topology across **7 global data centers** and regional offices for BlueMatrix.
-- 🚀 **Creator of [Renamarr](https://github.com/digdast/renamarr)**: Free, open-source media organizer and FileBot alternative with zero-config IMDb/TVMaze metadata suggestions, UNC network share support, and 1-click batch undo.
+- ⚡ **Creator of [Renamarr](https://github.com/digdast/renamarr)**: Free, open-source media organizer and FileBot alternative with zero-config IMDb/TVMaze metadata suggestions, UNC network share support, remote host CLI, and 1-click batch undo.
+- 🚀 **Creator of [Proxmox Cluster Suite](https://github.com/digdast/proxmox-cluster-suite)**: Automated production tuning, no-sub repo activation, nag removal, CPU performance governor, and real-time web monitoring for 5-node Proxmox VE HA clusters.
 - ⚡ **Creator of [Pulsearr](https://github.com/digdast/pulsearr)**: Next-gen asynchronous Python media suite unifying Sonarr, Radarr, and Prowlarr into a single ultra-fast daemon idling under 85MB RAM with SQLite in WAL mode.
 - 📈 **Financial DevOps & Release Engineering**: Directed release management across a 5-stage deployment pipeline (DEV ➔ QA ➔ UAT ➔ Staging ➔ PROD) with **99.999% SLA uptime** for institutional financial trading systems at StreamingEdge (Tradition).
 - 📦 **Enterprise Endpoint Automation**: Authored an open-source catalog of **58 production Intune & Graph automation scripts** covering zero-touch Windows Autopilot, BitLocker encryption, driver hygiene, and proactive self-healing remediations.
-- 🖥️ **Virtualization Across 5 Stacks**: Deep production administration across VMware vSphere/ESXi, Linux KVM, Citrix XenServer, XCP-NG, and Microsoft Hyper-V.
 
 📥 **Download Resume**: [📄 Tech Style PDF](https://raw.githubusercontent.com/digdast/digdast/main/Efrain_Rivas_SysAdmin_Resume.pdf) | [📝 Microsoft Word (.docx)](https://raw.githubusercontent.com/digdast/digdast/main/Efrain_Rivas_SysAdmin_Resume.docx) | [📖 Read Online (Markdown)](RESUME.md)
 
@@ -57,8 +57,19 @@ I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressi
         <img src="https://img.shields.io/badge/FastAPI-REST-009688?style=flat-square&logo=fastapi&logoColor=white" />
         <img src="https://img.shields.io/badge/FileBot-Alternative-purple?style=flat-square" />
       </p>
-      <p>Modern, free open-source media organizer. Interactive side-by-side diff table, zero-config IMDb & TVMaze metadata matching, UNC network shares / local drives, atomic renaming, and 1-click batch undo ledger.</p>
+      <p>Modern, free open-source media organizer. Interactive side-by-side diff table, zero-config IMDb & TVMaze metadata matching, UNC network shares / local drives, remote host CLI, atomic renaming, and 1-click batch undo ledger.</p>
     </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/digdast/proxmox-cluster-suite">🖥️ Proxmox Cluster Suite</a></h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Proxmox%20VE-Cluster-E57000?style=flat-square&logo=proxmox&logoColor=white" />
+        <img src="https://img.shields.io/badge/Ansible-Automated-EE0000?style=flat-square&logo=ansible&logoColor=white" />
+        <img src="https://img.shields.io/badge/K3s-LXC-326CE5?style=flat-square&logo=kubernetes&logoColor=white" />
+      </p>
+      <p>Enterprise optimization, high-availability tuning, automated NFS backups, and real-time web dashboard for 5-node Proxmox clusters (pve-00..pve-04). Auto nag removal, CPU governor, and ZFS ARC caps.</p>
+    </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3 align="center"><a href="https://github.com/digdast/pulsearr">⚡ Pulsearr</a></h3>
       <p align="center">
@@ -68,8 +79,6 @@ I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressi
       </p>
       <p>Next-Gen Asynchronous Python Media PVR combining <b>Sonarr (TV)</b>, <b>Radarr (Movies)</b>, and <b>Prowlarr (Trackers Hub)</b> into a unified ultra-fast daemon. 10x memory reduction (85MB vs 1.2GB .NET stack).</p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3 align="center"><a href="https://github.com/digdast/Intune-scripts">📦 Intune-scripts</a></h3>
       <p align="center">
@@ -77,14 +86,6 @@ I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressi
         <img src="https://img.shields.io/badge/Intune-58%20Scripts-0078D4?style=flat-square&logo=microsoft&logoColor=white" />
       </p>
       <p>Comprehensive enterprise catalog of <b>58 production Intune automation scripts</b> spanning Autopilot, BitLocker encryption, driver management, NDES certificates, Win32 apps, and Graph API administration.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/digdast/Intune-Remediation-scripts">🔧 Intune-Remediation-scripts</a></h3>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Proactive-Remediations-purple?style=flat-square" />
-        <img src="https://img.shields.io/badge/Self--Healing-Endpoints-success?style=flat-square" />
-      </p>
-      <p>Production proactive remediation packages for self-healing enterprise Windows fleets. Includes BSOD log shipping, BIOS password enforcement, driver crash remediations, low-disk sensors, and toast notifications.</p>
     </td>
   </tr>
 </table>

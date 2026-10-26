@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "category": "GLOBAL ACTIVE DIRECTORY",
+    "badge": "7 DATA CENTERS DEPLOYMENT",
+    "card_title": "Architecting Active Directory Across 7 Global Data Centers",
+    "card_takeaways": [
+      "Designed and deployed enterprise AD across 7 global datacenters & offices",
+      "Optimized multi-site replication topology and subnet site-cost weighting",
+      "Automated global user onboarding and GPO security baselines via PowerShell"
+    ],
+    "metric": "7 Global Datacenters",
+    "text": "Designing Active Directory for a single office is straightforward.\n\nDesigning, building, and deploying Active Directory across 7 global data centers and branch offices is where latency, replication storms, and domain controller placement will test your architecture.\n\nDuring my time as Systems Administrator & Architect at BlueMatrix, we engineered our global AD infrastructure from the ground up:\n\n1. Multi-Site Replication Topology: Configured explicit IP inter-site transports and cost-weighted subnets to prevent cross-region WAN bandwidth saturation.\n2. Global Catalog & FSMO Placement: Positioned Global Catalog servers at every hub data center while centralizing Schema and PDC Emulator roles in primary high-availability sites.\n3. Automated User & Employee Onboarding: Replaced manual user provisioning with modular PowerShell scripts that assign group memberships, Exchange mailboxes, and Entra ID cloud sync in seconds.\n\nResult:\nNear-instant authentication for global users, deterministic replication, and zero replication drift across all 7 data centers.\n\nHow does your organization handle multi-site AD replication and site link costs?\n\n(I am currently available for Senior Infrastructure & Cloud Architecture consulting and full-time roles — feel free to DM!)\n\n#activedirectory #sysadmin #windows #infrastructure #enterpriseit #powershell"
+  },
+  {
+    "id": 2,
+    "category": "HYPERVISOR ENGINEERING",
+    "badge": "5 HYPERVISORS COMPARED",
+    "card_title": "Managing 5 Enterprise Virtualization Platforms",
+    "card_takeaways": [
+      "Deep production experience across KVM, XenServer, vSphere, XCP-NG, Hyper-V",
+      "High-availability clustering, shared SAN/NFS storage, and live migrations",
+      "Optimizing vCPU overcommit, memory ballooning, and I/O scheduling"
+    ],
+    "metric": "5 Hypervisors Mastered",
+    "text": "Over 20+ years in enterprise infrastructure, I've managed almost every major enterprise hypervisor platform in production:\n\n• VMware vSphere (ESXi)\n• Citrix XenServer\n• XCP-NG (Open Source Xen)\n• Linux KVM\n• Microsoft Hyper-V\n\nHere are 3 core virtualization principles that hold true regardless of the platform:\n\n1. Storage Latency Kills First: CPU and RAM rarely crash a cluster. Storage I/O queues and NFS/iSCSI lock contention do. Always design your storage network (MPIO, jumbo frames, dedicated VLANs) before allocating a single VM.\n2. Memory Ballooning vs Overcommit: In financial and mission-critical production workloads, never overcommit memory. Balloon drivers induce memory pressure that can cause micro-stutters in database engines.\n3. Hardware Passthrough & Paravirtualization: Always enforce VirtIO (KVM) or VMXNET3 (vSphere) paravirtualized network and SCSI drivers to bypass OS kernel emulation overhead.\n\nWhether running proprietary vSphere or open-source XCP-NG / KVM clusters, the underlying hardware dynamics remain identical.\n\nWhat hypervisor stack is your team running in your primary datacenters?\n\n#virtualization #vmware #xcpng #kvm #hyperv #sysadmin #datacenters"
+  },
+  {
+    "id": 3,
+    "category": "DEVOPS & RELEASE MANAGEMENT",
+    "badge": "MULTI-STAGE CI/CD",
+    "card_title": "Release Engineering Across DEV, QA, UAT, Staging & PROD",
+    "card_takeaways": [
+      "Strict release coordination for financial trading at StreamingEdge (Tradition)",
+      "Automated CI/CD delivery pipelines minimizing deployment friction",
+      "Deterministic release windows and automated rollback guardrails"
+    ],
+    "metric": "5 Release Stages",
+    "text": "When managing release engineering for a financial services trading platform at StreamingEdge (Tradition America Holdings), a broken release isn't an inconvenience — it's an immediate financial disaster.\n\nTo maintain strict compliance and zero downtime, we operated across a structured 5-stage deployment pipeline:\n\nDEV ➡️ QA ➡️ UAT ➡️ Staging ➡️ Production.\n\nKey practices that made our deployments repeatable:\n\n1. Artifact Immutability: The exact same container image / build artifact that passed QA and UAT was deployed to Production. No rebuilding between stages.\n2. Automated Operational Tooling: Built custom deployment scripts bridging development and operations teams, eliminating manual SSH/RDP deployments.\n3. Post-Incident Root Cause Analysis (RCA): Every minor deployment failure triggered a blameless post-mortem focused on improving pipeline health checks.\n\nWhen your deployment process is completely automated, releasing code to production becomes boring — which is exactly what you want.\n\nHow many deployment stages does your team maintain before hitting production?\n\n#devops #cicd #releaseengineering #fintech #sysadmin #automation"
+  },
+  {
+    "id": 4,
+    "category": "HYBRID CLOUD & IDENTITY",
+    "badge": "AD TO ENTRA ID SYNC",
+    "card_title": "Modernizing On-Prem AD to Microsoft Entra ID",
+    "card_takeaways": [
+      "Hybrid identity synchronization for enterprise consulting clients",
+      "Seamless password hash sync, seamless SSO, and Conditional Access",
+      "Migrating legacy Group Policies to modern Intune configuration profiles"
+    ],
+    "metric": "Zero-Impact Identity Cutover",
+    "text": "In my current consulting work at O.S. Consulting, one of the most common challenges mid-market and enterprise clients face is identity fragmentation.\n\nThey have on-premises Active Directory built 15 years ago, and they want modern Microsoft 365 and Entra ID security baselines without breaking existing domain-joined systems.\n\nHere is our hybrid modernization playbook:\n\n1. Active Directory Sync (Entra Connect): Filtered OU synchronization with Password Hash Sync (PHS) and Seamless SSO, avoiding the fragility of ADFS infrastructure.\n2. GPO to Intune Analytics: Auditing legacy Group Policy Objects, eliminating 60% of outdated registry settings, and porting remaining security baselines to Intune Settings Catalog.\n3. Risk-Based Conditional Access: Implementing MFA and compliance enforcement so remote workers get seamless access while legacy unmanaged devices are blocked.\n\nModernization doesn't mean ripping everything out — it means building a clean bridge between proven on-prem systems and cloud governance.\n\nIs your organization fully cloud-native, or are you running hybrid Entra ID sync?\n\n#entraid #intune #microsoft365 #activedirectory #cloudconsulting #sysadmin"
+  },
+  {
+    "id": 5,
+    "category": "NETWORK & TELECOMMUNICATIONS",
+    "badge": "ENTERPRISE NETWORKING",
+    "card_title": "From T1 Circuits & VOIP to Modern Cloud Infrastructure",
+    "card_takeaways": [
+      "Foundations in routing, switching, firewalls, and enterprise VOIP systems",
+      "Designing resilient LAN/WAN topologies across corporate campuses",
+      "Why deep packet and network knowledge makes a better Cloud Architect"
+    ],
+    "metric": "20+ Year Foundation",
+    "text": "Before cloud consoles existed, systems engineers had to understand networking down to the copper wire.\n\nEarly in my career at Digital Network Development and telecom environments:\n• We routed T1/T3 circuits.\n• Configured hardware switches, routers, and enterprise VOIP telephony systems.\n• Designed multi-building LAN/WAN campus networks and site-to-site VPNs.\n\nWhy does this matter in the cloud era?\n\nBecause when an Azure VNet peering fails, a Kubernetes pod can't reach an external API, or a hybrid VPN gateway drops packets — you can't just click buttons in the GUI.\n\nYou have to understand:\n• Subnet masking and CIDR blocks\n• BGP and static routing tables\n• TCP windowing and MTU mismatch\n• Firewall state tables and NAT translation\n\nThe best cloud engineers aren't just script writers — they are network engineers who understand the traffic flowing through the pipes.\n\nDo you find network fundamentals make cloud troubleshooting significantly faster?\n\n#networking #cisco #azure #cloudarchitect #sysadmin #telecom"
+  },
+  {
+    "id": 6,
+    "category": "AZURE AUTOMATION & RUNBOOKS",
+    "badge": "POWERSHELL AUTOMATION",
+    "card_title": "Eliminating Repetitive IT Work with Azure Runbooks",
+    "card_takeaways": [
+      "Standardizing recurring admin workflows across Azure and hybrid systems",
+      "Automated VM scheduling, patch verification, and log rotation",
+      "Azure Automation Runbooks integrated with Microsoft Graph API"
+    ],
+    "metric": "90% Task Automation",
+    "text": "If an IT task has to be performed twice a week, it shouldn't be performed by a human.\n\nAt BlueMatrix, one of my primary missions was building PowerShell automation and Azure Automation Runbooks to systematically eliminate manual toil:\n\n1. Scheduled Compute Optimization: Runbooks that automatically deallocate non-production Azure VMs outside business hours, cutting compute spend by over 30%.\n2. Automated Patch Compliance: Hybrid runbooks that trigger OS patch sweeps, verify service restart health, and compile executive compliance reports.\n3. Stale Account Quarantine: Scripts that cross-reference active directory accounts against HR feeds and automatically disable dormant identities.\n\nWhen you automate repeatable maintenance, your senior engineers can focus on architecture, modernization, and business-critical projects.\n\nWhat recurring task has your team automated recently that saved the most time?\n\n#powershell #azure #automation #cloud #sysadmin #devops"
+  },
+  {
+    "id": 7,
+    "category": "OPEN SOURCE ENGINEERING",
+    "badge": "PULSEARR SHOWCASE",
+    "card_title": "Applying Enterprise Architecture to Open Source: Pulsearr",
+    "card_takeaways": [
+      "Building a high-throughput, async Python media suite from scratch",
+      "FastAPI + Python asyncio with embedded SQLite in WAL mode",
+      "Unified replacement for Sonarr, Radarr, and Prowlarr running in 85MB RAM"
+    ],
+    "metric": "Open Source Builder",
+    "text": "True engineering competence isn't just administering other people's software — it's knowing how to build high-performance software from the ground up.\n\nTo solve the memory bloat of running multiple heavy .NET media managers (Sonarr, Radarr, Prowlarr) in self-hosted home labs, I engineered an open-source alternative:\n\n⚡ Pulsearr (https://github.com/digdast/pulsearr)\n\nCore engineering highlights:\n• Asynchronous Python: Built on FastAPI and asyncio for concurrent tracker queries without thread locking.\n• High-Performance SQLite: Operates in WAL (Write-Ahead Logging) mode, enabling simultaneous read/write operations with sub-millisecond latency.\n• Ultra-Lightweight: Replaces 3 containers consuming 1.2 GB of RAM with a single daemon idling under 85 MB.\n\nBuilding open-source tools forces you to master concurrency, database tuning, API design, and container packaging at the deepest level.\n\nCheck out the code on GitHub and let me know your thoughts!\n\n#python #fastapi #opensource #softwareengineering #homelab #devops"
+  },
+  {
+    "id": 8,
+    "category": "INCIDENT TRIAGE & SRE",
+    "badge": "ROOT CAUSE ANALYSIS",
+    "card_title": "Production Incident Troubleshooting: The Senior Engineer's Playbook",
+    "card_takeaways": [
+      "Managing Level 3 escalation and mission-critical production outages",
+      "Systematic isolation: Physical -> Network -> OS -> App -> Cloud dependencies",
+      "Actionable post-incident RCA documentation that prevents repeat failures"
+    ],
+    "metric": "Level 3 Escalation Lead",
+    "text": "When a mission-critical system drops in production, junior engineers start guessing and tweaking random settings.\n\nSenior engineers follow a systematic diagnostic methodology.\n\nThroughout my career leading Tier 3 escalations and production incident response across BlueMatrix, Tradition, and O.S. Consulting, here is my troubleshooting framework:\n\n1. Define the Blast Radius: Is it one user, one subnet, one datacenter, or the entire tenant?\n2. Inspect the Seams: 80% of outages occur where systems connect — DNS resolution, expired SSL/TLS certificates, firewall NAT rules, or service principal credentials.\n3. Check the Delta: What changed in the last 60 minutes? Deployments, patch cycles, network route changes, or cloud provider advisory alerts.\n4. Blameless RCA: Document the exact failure chain, write automated detection to catch it before it recurs, and update disaster recovery runbooks.\n\nCalm, methodical troubleshooting is what separates real systems architects from administrators.\n\nWhat’s your golden rule when diagnosing a high-severity production outage?\n\n#sre #incidentresponse #troubleshooting #sysadmin #devops #reliability"
+  },
+  {
+    "id": 9,
+    "category": "ENDPOINT & MDM AUTOMATION",
+    "badge": "58 INTUNE TOOLS",
+    "card_title": "Open-Sourcing My Production Intune & Graph Automation Toolkit",
+    "card_takeaways": [
+      "58 production PowerShell scripts across 17 enterprise categories",
+      "BitLocker escrow, driver crash telemetry, Autopilot, and app packaging",
+      "Standard exit code rules: 0 for compliant, 1 for automated remediation"
+    ],
+    "metric": "58 Open-Source Tools",
+    "text": "After managing Intune and SCCM across thousands of enterprise endpoints, I noticed the same operational headaches everywhere:\n\n• Laptops failing BitLocker escrow to Entra ID\n• Incomplete software uninstalls leaving orphaned registry keys\n• Missing driver updates causing recurring BSODs\n• Manual app packaging eating up help desk time\n\nTo help the community, I open-sourced my full production library of 58 Intune & Microsoft Graph scripts on GitHub: https://github.com/digdast/Intune-scripts\n\nModules include:\n✅ Automated Autopilot pre-provisioning routines\n✅ Silent Win32 app wrapper packaging\n✅ Real-time BitLocker cipher detection & escrow\n✅ Self-cleaning proactive remediation scripts\n\nEverything is documented with clear exit codes for Microsoft Endpoint Analytics.\n\nGrab the scripts, fork the repo, and save your IT team dozens of hours this week!\n\n#intune #powershell #sysadmin #endpointmanagement #microsoft #automation"
+  },
+  {
+    "id": 10,
+    "category": "CAREER & CONSULTING",
+    "badge": "AVAILABLE FOR ROLES",
+    "card_title": "20+ Years in Enterprise IT: Open for Senior Cloud & Infrastructure Roles",
+    "card_takeaways": [
+      "Senior IT Infrastructure Consultant & Systems Architect",
+      "Proven track record across Azure, Intune, Active Directory, and Linux",
+      "Available for full-time senior roles or strategic enterprise consulting"
+    ],
+    "metric": "Open to Work",
+    "text": "From Windows NT and T1 circuits in 1999 to Azure Kubernetes Service, hybrid Entra ID, and automated endpoint fleets today — I have spent over two decades building, modernizing, and troubleshooting enterprise IT infrastructure.\n\nWhat I bring to organizations:\n• Cloud & Identity Mastery: Azure Architecture, Entra ID (PIM, Conditional Access), M365.\n• Global Systems Engineering: Active Directory architected across 7 global data centers.\n• Virtualization Across 5 Stacks: vSphere, KVM, XenServer, XCP-NG, Hyper-V.\n• Automation-First Mindset: Deep PowerShell, Azure Runbooks, and asynchronous Python engineering.\n\n💼 I am currently available for new opportunities:\n• Full-Time Senior Roles (Cloud Architect, Senior Systems Engineer, Endpoint Architect)\n• Enterprise Infrastructure Consulting (Intune Modernization, Cloud Migrations, Automation)\n• Remote (US-based) or hybrid in the Raleigh-Durham / Cary, NC area.\n\nIf your organization needs a senior builder who understands the entire stack from the wire to the cloud, let’s connect!\n\nEmail: efrain.acetech@gmail.com | Phone: (908) 845-3667 | GitHub: https://github.com/digdast\n\n#opentowork #cloudarchitect #seniorsystemsengineer #hiring #azure #devops"
+  }
+]

@@ -1,24 +1,24 @@
 # EFRAIN RIVAS
 **Senior Cloud Architect & Infrastructure Systems Engineer**  
-*Enterprise Cloud & Kubernetes | Active Directory & Entra ID | Proxmox VE & Virtualization | DevOps / CI/CD*  
+*Enterprise Cloud & HA Kubernetes | Sovereign AI & Multi-GPU Infrastructure | Active Directory & Entra ID | Proxmox VE & DevOps*  
 Cary, NC • [resume.ertechlab.com](https://resume.ertechlab.com) • [linkedin.com/in/efrain-rivas-93455a10](https://www.linkedin.com/in/efrain-rivas-93455a10) • [github.com/digdast](https://github.com/digdast)
 
 ---
 
 ## Executive Summary
-Results-driven Senior Cloud Architect and Systems Engineer with 20+ years of enterprise experience designing, modernizing, and automating mission-critical infrastructure across Microsoft Azure, Kubernetes, Active Directory, Entra ID, Linux, and multi-hypervisor environments. Proven track record architecting global Active Directory forests across 7 data centers, managing financial CI/CD release pipelines with 99.999% SLA uptime, engineering high-availability containerized microservices clusters, and delivering zero-touch endpoint provisioning via Microsoft Intune and Windows Autopilot. Skilled at translating complex business needs into resilient, automated architectures spanning physical bare-metal servers to cloud-native platforms. Creator of open-source automation platforms (NovaFlix, AegisDNS, Pulsearr, 58+ Intune modules) with deep expertise in PowerShell, Python, Proxmox VE clustering, and enterprise identity governance.
+Results-driven Senior Cloud Architect and Systems Engineer with 20+ years of enterprise experience designing, modernizing, and automating mission-critical infrastructure across Microsoft Azure, Kubernetes, Sovereign AI/LLM platforms, Active Directory, Entra ID, Linux, and multi-hypervisor environments. Proven track record architecting global Active Directory forests across 7 data centers, managing financial CI/CD release pipelines with 99.999% SLA uptime, engineering 6-node high-availability Kubernetes (K3s) clusters (36 vCPUs / 56GB RAM, 50+ pods across 12 namespaces), deploying dual-GPU local AI & RAG inference platforms, and delivering zero-touch endpoint provisioning via Microsoft Intune and Windows Autopilot. Creator of open-source automation platforms (NovaFlix, AegisDNS, Pulsearr, Renamarr, PrintForge, Proxmox Cluster Suite, 58+ Intune modules) with deep expertise in PowerShell, Python, Proxmox VE clustering, and enterprise identity governance.
 
 ---
 
 ## Core Competencies & Technical Skills
 
 * **Cloud & Directory Services**: Microsoft Azure (VMs, VNets, NSGs, AKS, Azure Files, Runbooks), Entra ID (Azure AD), Active Directory Domain Services (AD DS), Hybrid Identity (Entra Connect / PHS), Microsoft 365, Exchange Online, Group Policy (GPO).
-* **Containers & Kubernetes**: Kubernetes (k3s / k8s HA multi-node clusters, control-plane failover, worker pools, Traefik ingress, NodePort / LoadBalancer services, NFS persistent storage, rolling deployments, pod self-healing).
-* **Virtualization & Hypervisors**: Proxmox VE (HA multi-node clustering, zero-downtime memory tuning, Ceph / ZFS / NFS shared storage, LXC containerization, cloud-init), VMware vSphere / ESXi, Linux KVM, Citrix XenServer, XCP-NG, Microsoft Hyper-V, Azure Virtual Desktop (AVD), FSLogix.
-* **DevOps & Automation**: PowerShell 7+ (Enterprise Scripting, Tooling, GPO Automation), Python (Asyncio, FastAPI, PyParamiko), Bash, CI/CD Delivery Pipelines (DEV/QA/UAT/Staging/PROD), Azure Automation Runbooks, Systemd service/timer daemons, Git Version Control.
+* **Containers & High-Availability Kubernetes**: 6-Node HA K3s / K8s Clusters (dual control-plane etcd quorum + 4 worker nodes, 50+ pods across 12 namespaces), Traefik & Nginx Proxy Manager Ingress, Cloudflare Zero Trust Tunnel DaemonSets (`cloudflared`), Klipper ServiceLB, Shared NFS Persistent Storage, sysctl Kernel Tuning, etcd Compaction.
+* **Sovereign AI & Multi-GPU Infrastructure**: Local LLM Inference & Multi-Agent Orchestration (Ollama, Open WebUI, Paperclip AI), Dual-GPU CUDA 12.4 Workload Isolation (NVIDIA RTX 5070 + RTX 3060), ChromaDB RAG Vector Search, Sentence-Transformers Embeddings, Faster-Whisper STT.
+* **Virtualization & Hypervisors**: Proxmox VE (5-node HA clustering, AVX2 host CPU passthrough, zero-downtime memory tuning, Ceph / ZFS / NFS shared storage, LXC to K8s migrations, cloud-init), VMware vSphere / ESXi, Linux KVM, Citrix XenServer, XCP-NG, Microsoft Hyper-V, Azure Virtual Desktop (AVD), FSLogix.
+* **DevOps & Automation**: PowerShell 7+ (Enterprise Scripting, Tooling, GPO Automation), Python (Asyncio, FastAPI, Paramiko), Bash, CI/CD Delivery Pipelines (DEV/QA/UAT/Staging/PROD), Ansible, Terraform, Azure Automation Runbooks, Systemd service/timer daemons, Git Version Control.
 * **Endpoint & Device Management**: Microsoft Intune (MDM/MAM), Windows Autopilot (Zero-Touch), SCCM / MECM, Win32 App Packaging (.intunewin), Proactive Remediations, Windows 10/11, macOS, iOS, Android, Patch Governance.
-* **Security & Identity Governance**: Zero Trust Architecture, Automated SSL/TLS Lifecycle (Let's Encrypt DNS-01 / Cloudflare API, systemd timers), Privileged Identity Management (PIM), Conditional Access, FIDO2 / MFA, SAML 2.0 & OAuth 2.0 SSO, BitLocker / TPM Encryption, SecOps Hardening, Defender for Cloud.
-* **Networking, DNS & Storage**: Recursive DNSSEC Resolvers (Pi-hole v6, Unbound root hint recursion, DoH/DoT, multi-node sync), LAN/WAN Architecture, Routing & Switching, TCP/IP, Firewalls, Site-to-Site WireGuard / IPsec VPNs, Cloudflare Zero Trust, SAN/NAS, unRAID NFS, VOIP Telephony, T1/T3 Circuits.
+* **Security, Identity & Observability**: Zero Trust Architecture, Authentik Enterprise SSO/IdP (PostgreSQL 17 & Redis), Checkmk Enterprise Monitoring, Reconya L2 ARP/ICMP Asset Discovery, Automated SSL/TLS Lifecycle (Let's Encrypt DNS-01 / Cloudflare API), Tri-Node Pi-hole v6 + Unbound DNSSEC + DoH Cluster with Nebula-Sync, Conditional Access, FIDO2 / MFA, BitLocker / TPM Encryption.
 
 ---
 
@@ -26,13 +26,13 @@ Results-driven Senior Cloud Architect and Systems Engineer with 20+ years of ent
 
 ### **O.S. Consulting, Inc.** | Remote
 **Senior IT Infrastructure Consultant** | *2025 – Present*
-* **Enterprise Infrastructure & Cloud Advisory**: Provide senior-level infrastructure consulting across diverse client environments, translating business requirements into scalable cloud, Kubernetes, network, endpoint, and server architectures.
-* **High-Availability Kubernetes & Cluster Orchestration**: Architect and deploy resilient multi-node Kubernetes clusters with control-plane replication, worker pools, Traefik ingress routing, and persistent shared NFS storage; engineered 4-replica zero-downtime deployments with health checks and automated failover.
-* **Proxmox VE & Hypervisor Fleet Optimization**: Administer multi-node Proxmox VE virtualization clusters, tuning hardware resource allocation, eliminating memory ballooning contention for guaranteed performance, and orchestrating live-migration and automated backup routines.
-* **DNSSEC & Automated SSL/TLS Lifecycle**: Engineered tri-node synchronized Pi-hole v6 and Unbound recursive DNS clusters with root-hint recursion and DNSSEC validation; built automated Let's Encrypt wildcard certificate renewal pipelines via Cloudflare DNS-01 APIs and systemd timers.
-* **Hybrid Identity Modernization**: Architect and execute hybrid Active Directory to Microsoft Entra ID (Azure AD) synchronizations, implementing Password Hash Sync (PHS), Seamless SSO, and risk-based Conditional Access policies.
-* **Endpoint & Intune Migration**: Modernize legacy on-premise SCCM and GPO environments into cloud-native Microsoft Intune configurations; design automated Windows Autopilot deployment profiles reducing device onboarding time by over 80%.
-* **Level 3 Escalation & Root Cause Analysis**: Serve as the primary Tier 3 escalation architect for complex server, network connectivity, and authentication outages, systematically conducting root cause analysis (RCA) and eliminating systemic failure points.
+* **Enterprise Infrastructure & Cloud Advisory**: Provide senior-level infrastructure consulting across diverse client environments, translating business requirements into scalable cloud, Kubernetes, AI inference, network, endpoint, and server architectures.
+* **6-Node High-Availability Kubernetes (K3s) Orchestration**: Architected and deployed a 6-node HA K3s cluster (2 etcd/control-plane nodes + 4 workers, 36 vCPUs, 56GB RAM) hosting 50+ pods across 12 production namespaces (`authentik`, `dns`, `media`, `monitoring`, `npm`, `portainer`, `printforge`, `reconya`, `tomcat`, `tools`, `web`); implemented 4-node Cloudflare Tunnel DaemonSets, Traefik & Nginx Proxy Manager ingress, kernel `sysctl` tuning, and shared NFS storage.
+* **Sovereign AI & Dual-GPU RAG Infrastructure**: Engineered a dedicated dual-GPU AI workstation (NVIDIA RTX 5070 12GB + RTX 3060 12GB) running Ollama local LLMs, Open WebUI with isolated CUDA 12.4 PyTorch acceleration for ChromaDB vector RAG embeddings and Faster-Whisper speech transcription, and Paperclip AI multi-agent control plane orchestration.
+* **Proxmox VE Fleet & Workload Modernization**: Administer a 5-node Proxmox VE HA cluster, executing live LXC-to-Kubernetes workload migrations (Apache Tomcat 10.1, Reconya network discovery), configuring 12-core AVX2 host passthrough and RAM `tmpfs` transcode buffers, and eliminating memory ballooning contention.
+* **Resilient DNSSEC, DoH & Automated SSL/TLS Lifecycle**: Engineered a 3-node synchronized Pi-hole v6, Unbound recursive DNSSEC, and Cloudflare DoH sidecar cluster replicated via Nebula-Sync; built automated Let's Encrypt wildcard certificate renewal pipelines via Cloudflare DNS-01 APIs and Kubernetes CronJobs.
+* **Enterprise SSO, Observability & Asset Discovery**: Deployed in-cluster Authentik SSO/IdP (PostgreSQL 17 + Redis), Checkmk Raw Edition monitoring, and Reconya continuous Layer-2 ARP/ICMP network reconnaissance across production subnets.
+* **Hybrid Identity & Endpoint Modernization**: Architect hybrid Active Directory to Microsoft Entra ID synchronizations (PHS, Seamless SSO, Conditional Access) and modernize legacy SCCM/GPO estates into zero-touch Microsoft Intune and Windows Autopilot deployments.
 
 ### **BlueMatrix** | Durham, NC
 **Senior Systems Administrator & Infrastructure Architect** | *2018 – 2025*
@@ -61,12 +61,13 @@ Results-driven Senior Cloud Architect and Systems Engineer with 20+ years of ent
 
 ## Key Technical Projects & Open Source
 
+* **6-Node HA Kubernetes (K3s) Cluster & Cloudflared Mesh**: Production 6-node K3s cluster (`v1.36.5+k3s1`, 36 vCPUs / 56GB RAM) running 50+ pods across 12 namespaces with Authentik SSO, Checkmk, Tri-Node Pi-hole DoH/DNSSEC, 4-node Cloudflared Tunnel DaemonSet, Traefik & NPM ingress, and 4-replica HA web services. ([resume.ertechlab.com](https://resume.ertechlab.com))
+* **Sovereign Dual-GPU AI & RAG Platform**: Self-hosted LLM inference and multi-agent control plane combining Ollama (RTX 5070 12GB), Open WebUI with dedicated CUDA 12.4 RAG vector embedding & Faster-Whisper acceleration (RTX 3060 12GB), and Paperclip AI orchestration.
 * **NovaFlix (Creator & Architect)**: Sovereign next-generation open media platform & home theater engine (Plex / Jellyfin alternative) featuring 4K HDR Direct Play, HTTP 206 Range streaming, built-in remote access, SyncPlay, and cross-platform download portal. ([github.com/digdast/novaflix](https://github.com/digdast/novaflix))
 * **AegisDNS (Creator & Architect)**: Next-generation recursive DNS resolver & RFC 8484 DNS-over-HTTPS (DoH) engine traversing ICANN root hints with zero telemetry, in-memory threat defense (227k+ active threat/ad rules), and real-time cyber command center. ([github.com/digdast/aegisdns](https://github.com/digdast/aegisdns))
-* **High-Availability Kubernetes Cluster & Ingress**: Orchestrated multi-node k8s cluster with Traefik ingress, shared NFS storage, and automated 4-replica zero-downtime web application hosting. ([resume.ertechlab.com](https://resume.ertechlab.com))
+* **PrintForge 3D Portal (Creator & Architect)**: High-performance dark-mode 3D printing portal, calibration masterclass suite, 2026 printer benchmarks, and curated 3D model vault hosted on a 2-replica K3s deployment. ([3dprinting.ertechlab.com](https://3dprinting.ertechlab.com))
 * **Proxmox Cluster Suite**: Automated enterprise optimization, no-sub repo activation, nag removal, CPU governor, memory ballooning elimination, and real-time monitoring for multi-node Proxmox VE HA clusters. ([github.com/digdast/proxmox-cluster-suite](https://github.com/digdast/proxmox-cluster-suite))
-* **Pulsearr (Creator & Architect)**: Architected and built an ultra-fast, asynchronous Python media suite unifying Sonarr, Radarr, and Prowlarr into a single lightweight daemon; engineered with FastAPI, asyncio, SQLite WAL mode, and Gluetun WireGuard integration (85MB idle RAM vs 1.2GB .NET stack). ([github.com/digdast/pulsearr](https://github.com/digdast/pulsearr))
-* **Renamarr (Creator & Architect)**: High-performance media asset organizer with zero-config IMDb/TVMaze metadata suggestions, remote CLI agent, recursive UNC network share scanning, and an atomic 1-click batch undo ledger. ([github.com/digdast/renamarr](https://github.com/digdast/renamarr))
+* **Pulsearr & Renamarr (Creator & Architect)**: Asynchronous Python media suite unifying Sonarr, Radarr, and Prowlarr into an 85MB FastAPI/SQLite WAL daemon ([github.com/digdast/pulsearr](https://github.com/digdast/pulsearr)), paired with a zero-config IMDb/TVMaze asset organizer and 1-click undo ledger ([github.com/digdast/renamarr](https://github.com/digdast/renamarr)).
 * **Enterprise Intune Automation Catalog**: Authored and open-sourced 58 production PowerShell automation modules covering Autopilot pre-provisioning, BitLocker cipher detection, driver crash telemetry, and proactive endpoint remediations. ([github.com/digdast/Intune-scripts](https://github.com/digdast/Intune-scripts))
 
 ---
@@ -79,4 +80,3 @@ Results-driven Senior Cloud Architect and Systems Engineer with 20+ years of ent
 * **CompTIA Network+** Certified
 * **CompTIA Security+** Certified
 * **Inter-Tel University**: Telecommunications & VOIP Systems Engineering
-

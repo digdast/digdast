@@ -358,7 +358,7 @@
     <h2>Professional Profile & Architectural Focus</h2>
   </div>
   <p class="summary-text">
-    Results-driven <strong>Senior Cloud Architect and Systems Engineer</strong> with 20+ years of hands-on enterprise infrastructure experience designing, modernizing, and automating mission-critical systems across Microsoft Azure, Kubernetes, Active Directory Domain Services, Linux, and multi-hypervisor virtualization clusters. Proven architectural track record deploying global multi-site Active Directory forests across 7 global data centers, engineering 5-stage financial CI/CD release pipelines with 99.999% SLA uptime, orchestrating high-availability containerized microservices clusters, and implementing zero-touch endpoint provisioning via Microsoft Intune and Windows Autopilot. Creator of high-performance open-source platforms and engineering tools (<strong>NovaFlix, AegisDNS, Pulsearr, Renamarr, Proxmox Cluster Suite, 58+ Intune remediation modules</strong>) with deep expertise in PowerShell, Python, Proxmox VE clustering, and enterprise identity governance.
+    Results-driven <strong>Senior Cloud Architect and Systems Engineer</strong> with 20+ years of hands-on enterprise infrastructure experience designing, modernizing, and automating mission-critical systems across Microsoft Azure, Kubernetes, Sovereign AI/LLM platforms, Active Directory Domain Services, Linux, and multi-hypervisor virtualization clusters. Proven architectural track record deploying global multi-site Active Directory forests across 7 global data centers, engineering 5-stage financial CI/CD release pipelines with 99.999% SLA uptime, orchestrating a 6-node high-availability Kubernetes (K3s) cluster (36 vCPUs / 56GB RAM, 50+ pods across 12 namespaces), engineering dual-GPU local AI & RAG inference platforms, and implementing zero-touch endpoint provisioning via Microsoft Intune and Windows Autopilot. Creator of high-performance open-source platforms and engineering tools (<strong>NovaFlix, AegisDNS, Pulsearr, Renamarr, PrintForge, Proxmox Cluster Suite, 58+ Intune remediation modules</strong>) with deep expertise in PowerShell, Python, Proxmox VE clustering, and enterprise identity governance.
   </p>
 
   <!-- TECHNICAL MATRIX -->
@@ -383,45 +383,45 @@
     </div>
 
     <div class="matrix-box">
-      <div class="matrix-box-title">CONTAINERS & KUBERNETES</div>
+      <div class="matrix-box-title">CONTAINERS & HA KUBERNETES</div>
       <div class="tech-pills">
-        <span class="pill highlight">Kubernetes (k3s / k8s)</span>
-        <span class="pill highlight">Control-Plane HA</span>
-        <span class="pill highlight">Traefik Ingress</span>
-        <span class="pill">Worker Pools</span>
-        <span class="pill">NFS Persistent Volumes</span>
-        <span class="pill">Pod Auto-Recovery</span>
-        <span class="pill">Rolling Deployments</span>
-        <span class="pill">Docker Containers</span>
+        <span class="pill highlight">6-Node K3s / K8s HA</span>
+        <span class="pill highlight">Dual Control-Plane etcd</span>
+        <span class="pill highlight">Traefik & NPM Ingress</span>
+        <span class="pill highlight">Cloudflared DaemonSets</span>
+        <span class="pill">50+ Pods / 12 Namespaces</span>
+        <span class="pill">NFS Persistent Storage</span>
+        <span class="pill">Klipper ServiceLB</span>
+        <span class="pill">Sysctl Kernel Tuning</span>
       </div>
     </div>
 
     <div class="matrix-box">
       <div class="matrix-box-title">VIRTUALIZATION & HYPERVISORS</div>
       <div class="tech-pills">
-        <span class="pill highlight">Proxmox VE (HA Cluster)</span>
+        <span class="pill highlight">Proxmox VE (5-Node HA)</span>
         <span class="pill highlight">VMware vSphere / ESXi</span>
         <span class="pill highlight">Linux KVM</span>
-        <span class="pill">Citrix XenServer</span>
+        <span class="pill">Citrix XenServer / XCP-NG</span>
         <span class="pill">Microsoft Hyper-V</span>
+        <span class="pill">AVX2 Host Passthrough</span>
         <span class="pill">Zero-Balloon Memory Tuning</span>
-        <span class="pill">Azure Virtual Desktop (AVD)</span>
-        <span class="pill">FSLogix Profiles</span>
-        <span class="pill">SAN / NFS Clustering</span>
+        <span class="pill">LXC to K8s Migration</span>
+        <span class="pill">SAN / NFS / Ceph</span>
       </div>
     </div>
 
     <div class="matrix-box">
-      <div class="matrix-box-title">AUTOMATION & DEVOPS ENGINEERING</div>
+      <div class="matrix-box-title">SOVEREIGN AI, DEVOPS & AUTOMATION</div>
       <div class="tech-pills">
         <span class="pill highlight">PowerShell 7+</span>
         <span class="pill highlight">Python (Asyncio/FastAPI)</span>
-        <span class="pill">Bash</span>
-        <span class="pill highlight">CI/CD Release Pipelines</span>
-        <span class="pill">Azure Runbooks</span>
-        <span class="pill">Systemd Service/Timers</span>
-        <span class="pill">Git / GitHub Actions</span>
-        <span class="pill">REST APIs & WebSockets</span>
+        <span class="pill highlight">Dual-GPU AI (Ollama/RAG)</span>
+        <span class="pill highlight">Open WebUI & Paperclip AI</span>
+        <span class="pill">CI/CD Release Pipelines</span>
+        <span class="pill">CUDA 12.4 / ChromaDB</span>
+        <span class="pill">Ansible & Terraform</span>
+        <span class="pill">Git / Systemd Daemons</span>
       </div>
     </div>
 
@@ -440,16 +440,15 @@
     </div>
 
     <div class="matrix-box">
-      <div class="matrix-box-title">ZERO TRUST, DNS & SECURITY</div>
+      <div class="matrix-box-title">ZERO TRUST, SSO, DNS & OBSERVABILITY</div>
       <div class="tech-pills">
-        <span class="pill highlight">Zero Trust Security</span>
-        <span class="pill highlight">Automated SSL (DNS-01)</span>
-        <span class="pill highlight">Pi-hole v6 / Unbound DNSSEC</span>
-        <span class="pill">Privileged Identity (PIM)</span>
-        <span class="pill">Conditional Access</span>
-        <span class="pill">SAML 2.0 / OAuth SSO</span>
-        <span class="pill">FIDO2 / MFA</span>
-        <span class="pill">SecOps Hardening</span>
+        <span class="pill highlight">Authentik Enterprise SSO</span>
+        <span class="pill highlight">Checkmk & Reconya L2</span>
+        <span class="pill highlight">Pi-hole v6 DoH / Unbound</span>
+        <span class="pill">Nebula-Sync 3-Node DNS</span>
+        <span class="pill">Automated SSL (DNS-01)</span>
+        <span class="pill">Conditional Access / PIM</span>
+        <span class="pill">SAML 2.0 / OAuth / FIDO2</span>
         <span class="pill">Defender for Cloud</span>
       </div>
     </div>
@@ -468,12 +467,12 @@
       <div class="exp-meta">Remote | 2025 – Present</div>
     </div>
     <ul class="exp-bullets">
-      <li><strong>Enterprise Cloud & Systems Advisory</strong>: Deliver senior-level infrastructure consulting across diverse enterprise client environments, designing scalable cloud architectures, virtual server platforms, and network topologies tailored to compliance and business requirements.</li>
-      <li><strong>High-Availability Kubernetes Orchestration</strong>: Architect and deploy resilient multi-node Kubernetes clusters with control-plane replication, worker pools, Traefik ingress routing, and shared NFS persistent storage; engineered 4-replica zero-downtime deployments with health checks and automated failover.</li>
-      <li><strong>Proxmox VE Fleet Optimization</strong>: Administer multi-node Proxmox VE virtualization clusters, tuning hardware resource allocation, eliminating memory ballooning contention for guaranteed performance, and orchestrating live-migration and automated backup routines.</li>
-      <li><strong>DNSSEC & Automated SSL/TLS Lifecycle</strong>: Engineered tri-node synchronized Pi-hole v6 and Unbound recursive DNS clusters with root-hint recursion and DNSSEC validation; built automated Let's Encrypt wildcard certificate renewal pipelines via Cloudflare DNS-01 APIs and systemd timers.</li>
-      <li><strong>Hybrid Identity & Modern Endpoint</strong>: Architect hybrid AD to Entra ID synchronizations with PHS and Conditional Access; modernize SCCM/GPO environments to Intune with zero-touch Autopilot.</li>
-      <li><strong>Tier 3 Root Cause Analysis (RCA)</strong>: Act as the principal escalation architect for complex hypervisor outages, directory replication failures, and network latency anomalies, authoring automated remediation runbooks to eliminate systemic recurring incidents.</li>
+      <li><strong>6-Node HA Kubernetes (K3s) Orchestration</strong>: Architected and deployed a 6-node HA K3s cluster (2 etcd/control-plane nodes + 4 workers, 36 vCPUs, 56GB RAM) hosting 50+ pods across 12 production namespaces (Authentik SSO, Checkmk, Pi-hole DoH/DNSSEC, Portainer, Tomcat 10.1, Reconya, PrintForge, Arr media suite); implemented 4-node Cloudflare Tunnel DaemonSets, Traefik & NPM ingress, kernel sysctl optimization, and shared NFS storage.</li>
+      <li><strong>Sovereign AI & Dual-GPU RAG Infrastructure</strong>: Engineered a dedicated dual-GPU AI platform (NVIDIA RTX 5070 12GB + RTX 3060 12GB) running Ollama local LLMs, Open WebUI with isolated CUDA 12.4 PyTorch acceleration for ChromaDB vector RAG embeddings & Faster-Whisper STT, and Paperclip AI multi-agent control plane orchestration.</li>
+      <li><strong>Proxmox VE Fleet & Workload Modernization</strong>: Administer a 5-node Proxmox VE HA cluster, executing live LXC-to-Kubernetes migrations (Apache Tomcat 10.1, Reconya L2 discovery), configuring 12-core AVX2 host passthrough and 4GB RAM tmpfs transcode buffers, and eliminating memory ballooning contention.</li>
+      <li><strong>Tri-Node DNSSEC/DoH & Automated SSL Lifecycle</strong>: Engineered a 3-node Pi-hole v6, Unbound recursive DNSSEC, and Cloudflare DoH sidecar cluster synced via Nebula-Sync; built automated Let's Encrypt wildcard SSL renewal pipelines via Cloudflare DNS-01 APIs and Kubernetes CronJobs.</li>
+      <li><strong>Hybrid Identity & Modern Endpoint Governance</strong>: Architect hybrid AD to Entra ID synchronizations with PHS, Seamless SSO, and Conditional Access; modernize legacy SCCM/GPO environments to Microsoft Intune with zero-touch Windows Autopilot.</li>
+      <li><strong>Tier 3 Root Cause Analysis (RCA) & Observability</strong>: Deployed Checkmk enterprise monitoring and Reconya continuous Layer-2 ARP/ICMP discovery; serve as principal escalation architect for complex hypervisor, directory, and network incidents.</li>
     </ul>
   </div>
 
@@ -544,38 +543,38 @@
     </div>
     <div class="project-card">
       <div class="project-title">
-        <span>HA Kubernetes Cluster & Ingress</span>
+        <span>6-Node HA K3s Cluster & Ingress</span>
         <a href="https://resume.ertechlab.com">resume.ertechlab.com</a>
       </div>
       <div class="project-desc">
-        Orchestrated multi-node k8s cluster with Traefik ingress, shared NFS storage, and automated 4-replica zero-downtime web application hosting.
+        6-node K3s cluster (36 vCPUs / 56GB RAM, 50+ pods across 12 namespaces) with Authentik SSO, Checkmk, 4-node Cloudflared DaemonSet, and 4-replica HA web hosting.
       </div>
     </div>
     <div class="project-card">
       <div class="project-title">
-        <span>Proxmox Cluster Suite</span>
-        <a href="https://github.com/digdast/proxmox-cluster-suite">github.com/digdast/proxmox-cluster-suite</a>
+        <span>Sovereign Dual-GPU AI & RAG</span>
+        <a href="https://github.com/digdast">Proxmox / AI Lab</a>
       </div>
       <div class="project-desc">
-        Automated enterprise optimization, no-sub repo activation, nag removal, CPU governor, memory ballooning elimination, and real-time HA monitoring.
+        Dual-GPU LLM & RAG platform (RTX 5070 + RTX 3060) running Ollama, Open WebUI with CUDA 12.4 ChromaDB vector embeddings, and Paperclip AI agent orchestration.
       </div>
     </div>
     <div class="project-card">
       <div class="project-title">
-        <span>Pulsearr (Creator & Architect)</span>
+        <span>Pulsearr & Renamarr (Creator)</span>
         <a href="https://github.com/digdast/pulsearr">github.com/digdast/pulsearr</a>
       </div>
       <div class="project-desc">
-        Architected an asynchronous Python media suite unifying Sonarr, Radarr, and Prowlarr into a single lightweight daemon; built with FastAPI, asyncio, and SQLite WAL mode (85MB idle RAM).
+        Async Python media daemon unifying Sonarr/Radarr/Prowlarr in 85MB RAM (FastAPI/SQLite WAL) + zero-config IMDb/TVMaze media organizer with 1-click undo.
       </div>
     </div>
     <div class="project-card">
       <div class="project-title">
-        <span>Enterprise Intune Automation Catalog</span>
-        <a href="https://github.com/digdast/Intune-scripts">github.com/digdast/Intune-scripts</a>
+        <span>PrintForge 3D & Intune Catalog</span>
+        <a href="https://3dprinting.ertechlab.com">3dprinting.ertechlab.com</a>
       </div>
       <div class="project-desc">
-        Authored and open-sourced 58 production PowerShell automation modules covering Autopilot pre-provisioning, BitLocker cipher detection, and proactive endpoint remediations.
+        2-replica K3s 3D printing portal & model vault (3dprinting.ertechlab.com) + 58 open-source PowerShell Intune/Autopilot proactive remediation modules.
       </div>
     </div>
   </div>

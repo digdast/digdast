@@ -1,597 +1,945 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Efrain Rivas - Senior Cloud Architect & Infrastructure Systems Engineer</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efrain Rivas — Senior Cloud Architect & Infrastructure Systems Engineer</title>
 
-  @page {
-    size: letter;
-    margin: 0.28in 0.35in 0.28in 0.35in;
-  }
+  <!-- SEO & OpenGraph Meta Tags -->
+  <meta name="description"
+    content="Executive resume of Efrain Rivas. Senior Cloud Architect & Systems Engineer with 20+ years enterprise experience across Azure, Active Directory (7 Data Centers), Linux, Multi-Hypervisors, Intune, and DevOps.">
+  <meta name="keywords"
+    content="Efrain Rivas, Cloud Architect, Systems Engineer, Active Directory, Azure, Intune, DevOps, Proxmox, Hyper-V, VMware, PowerShell, Python">
+  <meta name="author" content="Efrain Rivas">
+  <meta property="og:title" content="Efrain Rivas — Senior Cloud Architect & Systems Engineer">
+  <meta property="og:description"
+    content="20+ years of mission-critical enterprise systems, global Active Directory forests (7 Data Centers), 99.999% SLA CI/CD release engineering, and cloud automation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://resume.ertechlab.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Efrain Rivas — Senior Cloud Architect & Systems Engineer">
+  <meta name="twitter:description"
+    content="Enterprise Cloud Architect & Systems Engineer. 20+ years experience. View full resume & credentials.">
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%200%20100%20100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
 
-  body {
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    color: #1e293b;
-    background: #ffffff;
-    font-size: 8.9pt;
-    line-height: 1.34;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-  a {
-    color: #0284c7;
-    text-decoration: none;
-  }
+  <style>
+    :root {
+      --bg-body: #0b1120;
+      --bg-card: rgba(15, 23, 42, 0.75);
+      --border-color: rgba(255, 255, 255, 0.1);
+      --accent-cyan: #38bdf8;
+      --accent-blue: #0284c7;
+      --accent-green: #10b981;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --pill-bg: rgba(255, 255, 255, 0.06);
+      --pill-border: rgba(255, 255, 255, 0.15);
+    }
 
-  /* Header Section */
-  .header-card {
-    border: 1px solid #e2e8f0;
-    border-radius: 7px;
-    background: linear-gradient(135deg, #0b132b 0%, #1c2541 100%);
-    color: #ffffff;
-    padding: 13px 18px;
-    margin-bottom: 8px;
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-  }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  .header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at top right, #1e293b, #0b1120 70%);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 30px 20px 80px;
+    }
 
-  .name-block h1 {
-    font-size: 21pt;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-    color: #ffffff;
-    margin: 0;
-    line-height: 1.1;
-  }
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
 
-  .title-badge {
-    display: inline-block;
-    margin-top: 4px;
-    background: rgba(56, 189, 248, 0.15);
-    border: 1px solid rgba(56, 189, 248, 0.4);
-    color: #38bdf8;
-    padding: 2.5px 8px;
-    border-radius: 4px;
-    font-size: 8.2pt;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    text-transform: uppercase;
-    font-family: 'JetBrains Mono', Consolas, monospace;
-  }
+    /* Header Banner */
+    .header-card {
+      background: linear-gradient(135deg, #0b132b 0%, #1c2541 100%);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: 14px;
+      padding: 32px 36px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
 
-  .status-tag {
-    background: rgba(16, 185, 129, 0.15);
-    border: 1px solid rgba(16, 185, 129, 0.35);
-    color: #34d399;
-    padding: 2.5px 8px;
-    border-radius: 4px;
-    font-size: 7.5pt;
-    font-family: 'JetBrains Mono', Consolas, monospace;
-    font-weight: 600;
-  }
+    .header-card::after {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
 
-  .contact-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 8px;
-    padding-top: 7px;
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-    font-size: 8pt;
-    font-family: 'JetBrains Mono', Consolas, monospace;
-    color: #cbd5e1;
-  }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
 
-  .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
+    .name-title h1 {
+      font-size: 32pt;
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      background: linear-gradient(to right, #ffffff, #e2e8f0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-  .contact-bar a {
-    color: #38bdf8;
-    text-decoration: none;
-  }
+    .role-badge {
+      display: inline-block;
+      margin-top: 8px;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: var(--accent-cyan);
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 10pt;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+    }
 
-  /* Section Headers */
-  .section-header {
-    display: flex;
-    align-items: center;
-    gap: 7px;
-    margin-top: 8px;
-    margin-bottom: 5px;
-    border-bottom: 1.5px solid #e2e8f0;
-    padding-bottom: 3px;
-  }
+    .status-tag {
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #34d399;
+      padding: 6px 14px;
+      border-radius: 9999px;
+      font-size: 8.5pt;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+    }
 
-  .section-header .tag-prefix {
-    font-family: 'JetBrains Mono', Consolas, monospace;
-    font-size: 7.6pt;
-    font-weight: 700;
-    color: #0284c7;
-    background: #e0f2fe;
-    padding: 1.5px 5px;
-    border-radius: 3px;
-  }
+    .contact-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 9.5pt;
+      font-family: 'JetBrains Mono', monospace;
+      color: #cbd5e1;
+    }
 
-  .section-header h2 {
-    font-size: 10pt;
-    font-weight: 800;
-    color: #0f172a;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    margin: 0;
-  }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
 
-  /* Summary */
-  .summary-text {
-    font-size: 8.5pt;
-    color: #334155;
-    text-align: justify;
-    line-height: 1.36;
-    margin-bottom: 5px;
-  }
+    .contact-item:hover {
+      color: var(--accent-cyan);
+    }
 
-  /* Technical Matrix */
-  .tech-matrix {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    margin-bottom: 6px;
-  }
+    .contact-strip a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-  .matrix-box {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-radius: 4px;
-    padding: 5px 8px;
-  }
+    /* Action Downloads Bar */
+    .action-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
 
-  .matrix-box-title {
-    font-family: 'JetBrains Mono', Consolas, monospace;
-    font-size: 7.8pt;
-    font-weight: 700;
-    color: #0369a1;
-    margin-bottom: 4px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 20px;
+      border-radius: 8px;
+      font-size: 9.5pt;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
 
-  .matrix-box-title::before {
-    content: "▶";
-    font-size: 6pt;
-    color: #0284c7;
-  }
+    .btn-pdf {
+      background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(220, 38, 38, 0.35);
+    }
 
-  .tech-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3.5px;
-  }
+    .btn-pdf:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(220, 38, 38, 0.5);
+    }
 
-  .pill {
-    background: #ffffff;
-    border: 1px solid #cbd5e1;
-    color: #1e293b;
-    font-family: 'JetBrains Mono', Consolas, monospace;
-    font-size: 7.3pt;
-    padding: 1.5px 5px;
-    border-radius: 3px;
-    font-weight: 500;
-  }
+    .btn-docx {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+    }
 
-  .pill.highlight {
-    background: #e0f2fe;
-    border-color: #7dd3fc;
-    color: #0369a1;
-    font-weight: 600;
-  }
+    .btn-docx:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+    }
 
-  /* Experience Cards */
-  .experience-item {
-    margin-bottom: 7px;
-    padding-left: 9px;
-    border-left: 2px solid #0284c7;
-    page-break-inside: avoid;
-  }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--border-color);
+      color: #f8fafc;
+    }
 
-  .exp-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 1px;
-  }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--accent-cyan);
+      transform: translateY(-2px);
+    }
 
-  .exp-role {
-    font-size: 9.1pt;
-    font-weight: 750;
-    color: #0f172a;
-  }
+    /* Section Headers */
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 32px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border-color);
+    }
 
-  .exp-company {
-    color: #0284c7;
-    font-weight: 700;
-  }
+    .tag-prefix {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9pt;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      background: rgba(56, 189, 248, 0.15);
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
 
-  .exp-meta {
-    font-family: 'JetBrains Mono', Consolas, monospace;
-    font-size: 7.6pt;
-    color: #64748b;
-    font-weight: 600;
-    text-align: right;
-  }
+    .section-title h2 {
+      font-size: 13pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #ffffff;
+    }
 
-  .exp-bullets {
-    list-style: none;
-    margin-top: 2px;
-  }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 22px 26px;
+      backdrop-filter: blur(8px);
+      margin-bottom: 16px;
+    }
 
-  .exp-bullets li {
-    position: relative;
-    padding-left: 12px;
-    margin-bottom: 2.2px;
-    font-size: 8.2pt;
-    color: #334155;
-    line-height: 1.3;
-  }
+    /* Summary */
+    .summary-text {
+      font-size: 10.5pt;
+      color: #cbd5e1;
+      line-height: 1.7;
+    }
 
-  .exp-bullets li::before {
-    content: "▸";
-    position: absolute;
-    left: 0;
-    color: #0284c7;
-    font-weight: 800;
-    font-size: 8pt;
-  }
+    .summary-text strong {
+      color: #ffffff;
+    }
 
-  .exp-bullets strong {
-    color: #0f172a;
-    font-weight: 700;
-  }
+    /* Tech Matrix Grid */
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 14px;
+      margin-top: 14px;
+    }
 
-  /* Projects & Open Source */
-  .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    margin-bottom: 5px;
-    page-break-inside: avoid;
-  }
+    .matrix-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
 
-  .project-card {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    border-left: 2.5px solid #0ea5e9;
-    border-radius: 4px;
-    padding: 4px 7px;
-  }
+    .matrix-title {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
 
-  .project-title {
-    font-size: 8.3pt;
-    font-weight: 750;
-    color: #0f172a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5px;
-  }
+    .pills-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
 
-  .project-title a {
-    font-family: 'JetBrains Mono', Consolas, monospace;
-    font-size: 7pt;
-    color: #0284c7;
-  }
+    .pill {
+      background: var(--pill-bg);
+      border: 1px solid var(--pill-border);
+      color: #e2e8f0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8.5pt;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
 
-  .project-desc {
-    font-size: 7.7pt;
-    color: #475569;
-    line-height: 1.25;
-  }
+    .pill.highlight {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: rgba(56, 189, 248, 0.4);
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
 
-  /* Certifications */
-  .certs-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4.5px;
-    margin-top: 3px;
-    page-break-inside: avoid;
-  }
+    /* Experience Timeline */
+    .experience-card {
+      margin-bottom: 18px;
+      border-left: 3.5px solid var(--accent-blue);
+      border-radius: 0 10px 10px 0;
+      padding: 20px 24px;
+      background: var(--bg-card);
+      border-top: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
 
-  .cert-badge {
-    background: #f0fdf4;
-    border: 1px solid #86efac;
-    color: #166534;
-    padding: 2.5px 6px;
-    border-radius: 3px;
-    font-size: 7.4pt;
-    font-family: 'JetBrains Mono', Consolas, monospace;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 3px;
-  }
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
 
-  .cert-badge::before {
-    content: "✓";
-    color: #15803d;
-    font-weight: 800;
-  }
-</style>
+    .exp-role {
+      font-size: 12pt;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .exp-company {
+      color: var(--accent-cyan);
+    }
+
+    .exp-meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9pt;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      margin-top: 8px;
+    }
+
+    .exp-bullets li {
+      position: relative;
+      padding-left: 18px;
+      margin-bottom: 8px;
+      font-size: 9.8pt;
+      color: #cbd5e1;
+      line-height: 1.55;
+    }
+
+    .exp-bullets li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      color: var(--accent-cyan);
+      font-weight: 800;
+    }
+
+    .exp-bullets strong {
+      color: #ffffff;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 14px;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-left: 3.5px solid var(--accent-cyan);
+      border-radius: 8px;
+      padding: 16px 18px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent-cyan);
+    }
+
+    .project-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .project-title h3 {
+      font-size: 11pt;
+      font-weight: 750;
+      color: #ffffff;
+    }
+
+    .project-title a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8.5pt;
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+
+    .project-desc {
+      font-size: 9pt;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+
+    /* Certifications */
+    .certs-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .cert-pill {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #6ee7b7;
+      padding: 7px 14px;
+      border-radius: 6px;
+      font-size: 9pt;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0284c7;
+      color: #ffffff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9pt;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      z-index: 9999;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: var(--text-muted);
+      font-size: 9pt;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: #fff !important;
+        color: #000 !important;
+      }
+
+      .action-bar,
+      footer {
+        display: none !important;
+      }
+
+      .header-card,
+      .card,
+      .experience-card,
+      .matrix-box,
+      .project-card {
+        background: #fff !important;
+        border-color: #cbd5e1 !important;
+        color: #0f172a !important;
+        box-shadow: none !important;
+      }
+
+      .name-title h1 {
+        -webkit-text-fill-color: #0f172a !important;
+      }
+
+      .role-badge,
+      .status-tag {
+        border-color: #0284c7 !important;
+        color: #0284c7 !important;
+      }
+
+      .summary-text,
+      .exp-bullets li,
+      .project-desc {
+        color: #334155 !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <div class="header-card">
-    <div class="header-top">
-      <div class="name-block">
-        <h1>EFRAIN RIVAS</h1>
-        <div class="title-badge">Senior Cloud Architect & Infrastructure Systems Engineer</div>
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="header-card">
+      <div class="header-top">
+        <div class="name-title">
+          <h1>EFRAIN RIVAS</h1>
+          <div class="role-badge">Senior Cloud Architect & Infrastructure Systems Engineer</div>
+        </div>
+        <div class="status-tag">● ENTERPRISE CLOUD & KUBERNETES ARCHITECT</div>
       </div>
-      <div class="status-tag">● ENTERPRISE CLOUD & KUBERNETES ARCHITECT</div>
+
+      <div class="contact-strip">
+        <div class="contact-item">📍 Cary, NC</div>
+        <div class="contact-item">🌐 <a href="https://linkedin.com/in/efrain-rivas-93455a10"
+            target="_blank">linkedin.com/in/efrain-rivas-93455a10</a></div>
+        <div class="contact-item">💻 <a href="https://github.com/digdast" target="_blank">github.com/digdast</a></div>
+        <div class="contact-item">⚡ <a href="https://resume.ertechlab.com" target="_blank">resume.ertechlab.com</a>
+        </div>
+      </div>
     </div>
-    <div class="contact-bar">
-      <div class="contact-item">📍 Cary, NC</div>
-      <div class="contact-item">🌐 <a href="https://linkedin.com/in/efrain-rivas-93455a10">linkedin.com/in/efrain-rivas-93455a10</a></div>
-      <div class="contact-item">💻 <a href="https://github.com/digdast">github.com/digdast</a></div>
-      <div class="contact-item">⚡ <a href="https://resume.ertechlab.com">resume.ertechlab.com</a></div>
+
+    <!-- ACTION / DOWNLOADS BAR -->
+    <div class="action-bar">
+      <a href="/Efrain_Rivas_SysAdmin_Resume.pdf" download class="btn btn-pdf">
+        <span>📄</span> Download Tech PDF Resume
+      </a>
+      <a href="/Efrain_Rivas_SysAdmin_Resume.docx" download class="btn btn-docx">
+        <span>📝</span> Download Word Document (.docx)
+      </a>
+      <a href="https://www.linkedin.com/in/efrain-rivas-93455a10" target="_blank" class="btn btn-secondary">
+        <span>🔗</span> LinkedIn Profile
+      </a>
+      <a href="https://github.com/digdast" target="_blank" class="btn btn-secondary">
+        <span>💻</span> GitHub Showcase
+      </a>
+      <button onclick="window.print()" class="btn btn-secondary">
+        <span>🖨️</span> Print / Save Page
+      </button>
     </div>
+
+    <!-- 01. PROFESSIONAL PROFILE -->
+    <div class="section-title">
+      <span class="tag-prefix">// 01</span>
+      <h2>Professional Profile & Architectural Focus</h2>
+    </div>
+    <div class="card">
+      <p class="summary-text">
+        Results-driven <strong>Senior Cloud Architect and Systems Engineer</strong> with 20+ years of enterprise
+        experience designing, modernizing, and automating mission-critical infrastructure across Microsoft Azure,
+        Kubernetes, Sovereign AI/LLM platforms, Active Directory Domain Services, Linux, and multi-hypervisor
+        virtualization clusters. Proven architectural track record deploying global multi-site Active Directory forests
+        across 7 global data centers, engineering 5-stage financial CI/CD release pipelines with 99.999% SLA uptime,
+        orchestrating a 6-node high-availability Kubernetes (K3s) cluster (36 vCPUs / 56GB RAM, 50+ pods across 12
+        namespaces), engineering dual-GPU local AI & RAG inference platforms, and implementing zero-touch endpoint
+        provisioning via Microsoft Intune and Windows Autopilot. Creator of high-performance open-source platforms and
+        engineering tools (<strong>NovaFlix, AegisDNS, Pulsearr, Renamarr, PrintForge, Proxmox Cluster Suite, 58+ Intune
+          remediation modules</strong>) with deep expertise in PowerShell, Python, Proxmox VE clustering, and enterprise
+        identity governance.
+      </p>
+    </div>
+
+    <!-- 02. TECHNICAL MATRIX -->
+    <div class="section-title">
+      <span class="tag-prefix">// 02</span>
+      <h2>Core Technical Competencies & Systems Matrix</h2>
+    </div>
+    <div class="tech-grid">
+      <div class="matrix-box">
+        <div class="matrix-title">▶ CLOUD & DIRECTORY ARCHITECTURE</div>
+        <div class="pills-wrap">
+          <span class="pill highlight">Microsoft Azure</span>
+          <span class="pill highlight">Entra ID (Azure AD)</span>
+          <span class="pill highlight">Active Directory DS</span>
+          <span class="pill">Hybrid Identity (PHS/PTA)</span>
+          <span class="pill">VNets / NSGs</span>
+          <span class="pill">Azure Files</span>
+          <span class="pill">Group Policy (GPO)</span>
+          <span class="pill">Exchange Online</span>
+          <span class="pill">M365 Tenant Admin</span>
+        </div>
+      </div>
+
+      <div class="matrix-box">
+        <div class="matrix-title">▶ CONTAINERS & HA KUBERNETES</div>
+        <div class="pills-wrap">
+          <span class="pill highlight">7-Node K3s / K8s HA</span>
+          <span class="pill highlight">3-Node Control-Plane etcd</span>
+          <span class="pill highlight">Traefik & NPM Ingress</span>
+          <span class="pill highlight">Cloudflared DaemonSets</span>
+          <span class="pill">55+ Pods / 14 Namespaces</span>
+          <span class="pill">NVMe HostPath & Local-Path</span>
+          <span class="pill">Klipper ServiceLB</span>
+          <span class="pill">Sysctl Kernel Tuning</span>
+        </div>
+      </div>
+
+      <div class="matrix-box">
+        <div class="matrix-title">▶ VIRTUALIZATION, HYPERVISORS & SAN</div>
+        <div class="pills-wrap">
+          <span class="pill highlight">Proxmox VE (5-Node HA)</span>
+          <span class="pill highlight">VMware vSphere / ESXi</span>
+          <span class="pill highlight">Storage Area Networks (SAN)</span>
+          <span class="pill highlight">Linux KVM</span>
+          <span class="pill">Citrix XenServer / XCP-NG</span>
+          <span class="pill">Microsoft Hyper-V</span>
+          <span class="pill">AVX2 Host Passthrough</span>
+          <span class="pill">Zero-Balloon Memory Tuning</span>
+          <span class="pill">NFS / Ceph / iSCSI</span>
+        </div>
+      </div>
+
+      <div class="matrix-box">
+        <div class="matrix-title">▶ SOVEREIGN AI, DEVOPS & AUTOMATION</div>
+        <div class="pills-wrap">
+          <span class="pill highlight">Blackwell RTX 5070 (Driver 595+)</span>
+          <span class="pill highlight">Ollama Flash-Attention (90+ t/s)</span>
+          <span class="pill highlight">Hermes Autonomous Agent Swarm</span>
+          <span class="pill highlight">Paperclip & SynapseFlow DAG</span>
+          <span class="pill">Telegram Two-Way Bot API</span>
+          <span class="pill">Python (Asyncio/FastAPI)</span>
+          <span class="pill">CUDA 13.2 / Open Kernel Modules</span>
+          <span class="pill">PowerShell 7+ / Ansible</span>
+        </div>
+      </div>
+
+      <div class="matrix-box">
+        <div class="matrix-title">▶ ENDPOINT & DEVICE GOVERNANCE</div>
+        <div class="pills-wrap">
+          <span class="pill highlight">Microsoft Intune (MDM/MAM)</span>
+          <span class="pill highlight">Windows Autopilot</span>
+          <span class="pill">SCCM / MECM</span>
+          <span class="pill">Win32 Packaging (.intunewin)</span>
+          <span class="pill">Proactive Remediations</span>
+          <span class="pill">BitLocker Key Escrow</span>
+          <span class="pill">Patch Compliance Governance</span>
+          <span class="pill">Windows 10/11 & macOS</span>
+        </div>
+      </div>
+
+      <div class="matrix-box">
+        <div class="matrix-title">▶ ZERO TRUST, SSO, DNS & OBSERVABILITY</div>
+        <div class="pills-wrap">
+          <span class="pill highlight">Authentik Enterprise SSO</span>
+          <span class="pill highlight">Checkmk & Reconya L2</span>
+          <span class="pill highlight">Pi-hole v6 DoH / Unbound</span>
+          <span class="pill">Nebula-Sync 3-Node DNS</span>
+          <span class="pill">Automated SSL (DNS-01)</span>
+          <span class="pill">Conditional Access / PIM</span>
+          <span class="pill">SAML 2.0 / OAuth / FIDO2</span>
+          <span class="pill">Defender for Cloud</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 03. EXPERIENCE -->
+    <div class="section-title">
+      <span class="tag-prefix">// 03</span>
+      <h2>Enterprise Infrastructure Experience</h2>
+    </div>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="exp-role">Senior IT Infrastructure Consultant • <span class="exp-company">O.S. Consulting,
+            Inc.</span></div>
+        <div class="exp-meta">Remote | 2025 – Present</div>
+      </div>
+      <ul class="exp-bullets">
+        <li><strong>6-Node HA Kubernetes (K3s) Orchestration</strong>: Architected and deployed a 6-node HA K3s cluster
+          (2 etcd/control-plane nodes + 4 workers, 36 vCPUs, 56GB RAM) hosting 50+ pods across 12 production namespaces
+          (Authentik SSO, Checkmk, Pi-hole DoH/DNSSEC, Portainer, Tomcat 10.1, Reconya, PrintForge, Arr media suite);
+          implemented 4-node Cloudflare Tunnel DaemonSets, Traefik & NPM ingress, kernel sysctl optimization, and shared
+          NFS storage.</li>
+        <li><strong>Sovereign AI & Dual-GPU RAG Infrastructure</strong>: Engineered a dedicated dual-GPU AI platform
+          (NVIDIA RTX 5070 12GB + RTX 3060 12GB) running Ollama local LLMs, Open WebUI with isolated CUDA 12.4 PyTorch
+          acceleration for ChromaDB vector RAG embeddings & Faster-Whisper STT, and Paperclip AI multi-agent control
+          plane orchestration.</li>
+        <li><strong>Proxmox VE Fleet & Workload Modernization</strong>: Administer a 5-node Proxmox VE HA cluster,
+          executing live LXC-to-Kubernetes migrations (Apache Tomcat 10.1, Reconya L2 discovery), configuring 12-core
+          AVX2 host passthrough and 4GB RAM tmpfs transcode buffers, and eliminating memory ballooning contention.</li>
+        <li><strong>Tri-Node DNSSEC/DoH & Automated SSL Lifecycle</strong>: Engineered a 3-node Pi-hole v6, Unbound
+          recursive DNSSEC, and Cloudflare DoH sidecar cluster synced via Nebula-Sync; built automated Let's Encrypt
+          wildcard SSL renewal pipelines via Cloudflare DNS-01 APIs and Kubernetes CronJobs.</li>
+        <li><strong>Hybrid Identity & Modern Endpoint Governance</strong>: Architect hybrid AD to Entra ID
+          synchronizations with PHS, Seamless SSO, and Conditional Access; modernize legacy SCCM/GPO environments to
+          Microsoft Intune with zero-touch Windows Autopilot.</li>
+        <li><strong>Tier 3 Root Cause Analysis (RCA) & Observability</strong>: Deployed Checkmk enterprise monitoring
+          and Reconya continuous Layer-2 ARP/ICMP discovery; serve as principal escalation architect for complex
+          hypervisor, directory, and network incidents.</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="exp-role">Senior Systems Administrator & Infrastructure Architect • <span
+            class="exp-company">BlueMatrix</span></div>
+        <div class="exp-meta">Durham, NC | 2018 – 2025</div>
+      </div>
+      <ul class="exp-bullets">
+        <li><strong>Global Multi-Site Active Directory Forest</strong>: Architected, built, and maintained enterprise
+          Active Directory forest and domain infrastructure across 7 global data centers and regional offices; tuned
+          multi-site replication topology, site-cost weighting, and distributed DNS to guarantee sub-second
+          authentication worldwide.</li>
+        <li><strong>Multi-Hypervisor Virtualization & Storage Area Networks (SAN)</strong>: Administered and tuned
+          high-density
+          virtualization clusters across Linux KVM, Citrix XenServer, VMware vSphere/ESXi, and XCP-NG; architected and
+          orchestrated
+          enterprise Storage Area Networks (SAN), iSCSI/Fibre Channel LUNs, shared NFS arrays, vCPU scheduling, dynamic
+          memory allocations, and automated snapshot replication.</li>
+        <li><strong>Azure Cloud Infrastructure & Automation</strong>: Spearheaded phased migrations transitioning
+          mission-critical on-premises systems to Microsoft Azure; architected VNets, Network Security Groups (NSGs),
+          Azure Virtual Machines, and custom Azure Automation Runbooks to govern automated compute scaling and patch
+          compliance.</li>
+        <li><strong>Automated Identity Lifecycle Engineering</strong>: Developed robust PowerShell automation workflows
+          connecting HR systems with AD DS and Entra ID, completely automating provisioning, RBAC group delegation,
+          Microsoft 365 licensing, and zero-day offboarding security revocation.</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="exp-role">DevOps Engineer & Systems Administrator • <span class="exp-company">StreamingEdge
+            (Tradition America)</span></div>
+        <div class="exp-meta">New York, NY (Hybrid) | 2013 – 2018</div>
+      </div>
+      <ul class="exp-bullets">
+        <li><strong>Financial CI/CD Release Pipeline Engineering</strong>: Directed release engineering across a
+          structured 5-stage deployment pipeline (DEV ➔ QA ➔ UAT ➔ Staging ➔ Production) for institutional financial
+          trading systems, coordinating zero-downtime off-hours application releases and configuration verification.
+        </li>
+        <li><strong>Mission-Critical Systems Reliability (99.999% SLA)</strong>: Engineered and administered
+          high-availability Windows Server (2012–2022) and Linux (RHEL, CentOS, Ubuntu) server farms hosting
+          high-throughput financial transaction engines, consistently maintaining five-nines (99.999%) SLA uptime.</li>
+        <li><strong>Clustered Virtualization & Storage Area Networks (SAN)</strong>: Managed fault-tolerant
+          virtualization clusters across
+          Microsoft Hyper-V and VMware vSphere backed by enterprise Storage Area Networks (SAN), configuring multi-path
+          I/O (MPIO), multi-NIC teaming, virtual switch isolation, host failover
+          clustering, and disaster recovery replication.</li>
+        <li><strong>Enterprise Networking & Perimeter Security</strong>: Designed and maintained high-throughput LAN/WAN
+          routing, core switching, hardware firewalls, site-to-site IPsec VPN tunnels, and enterprise telecommunications
+          infrastructure.</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="exp-role">NOC Engineer • <span class="exp-company">Datapipe</span></div>
+        <div class="exp-meta">Jersey City, NJ | May 2012 – Jul 2013</div>
+      </div>
+      <ul class="exp-bullets">
+        <li><strong>24x7 Managed Cloud, SAN & Infrastructure Operations</strong>: Monitored and maintained 24x7 high
+          availability of hosted Windows Server and Unix/Linux web, application, and database server fleets backed by
+          enterprise Storage Area Networks (SAN) within a managed services NOC environment.</li>
+        <li><strong>Incident Response & SLA Restoration</strong>: Responded to real-time infrastructure and SAN storage
+          alerts, triaged and escalated critical multi-tier incidents, and executed standard operating procedures (SOPs)
+          to rapidly restore service for enterprise clients.</li>
+        <li><strong>Database Administration & Performance Monitoring</strong>: Supported production Microsoft SQL Server
+          and MySQL database environments, performing routine health checks, backup verification, and performance
+          telemetry monitoring.</li>
+        <li><strong>NOC Process & Runbook Engineering</strong>: Contributed to continuous NOC process improvement
+          initiatives and authored detailed incident post-mortems, operational logs, and technical troubleshooting
+          runbooks.</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <div class="exp-role">Senior Network Administrator • <span class="exp-company">Digital Network
+            Development</span></div>
+        <div class="exp-meta">Peoria, IL | 1999 – 2011</div>
+      </div>
+      <ul class="exp-bullets">
+        <li><strong>Enterprise Windows Server Operations</strong>: Commissioned, upgraded, and administered physical
+          enterprise servers spanning Windows NT 4.0, 2000, 2003, and 2008, managing Active Directory, Group Policy
+          Objects, DNS, DHCP, and enterprise storage.</li>
+        <li><strong>Telecommunications & Core Networking</strong>: Engineered, programmed, and maintained managed Cisco
+          switches, routers, multi-building wireless links, T1/T3 telecommunications circuits, and enterprise VOIP
+          telephony platforms.</li>
+        <li><strong>Disaster Recovery & Tier 3 Escalation</strong>: Managed enterprise tape and NAS backup routines,
+          storage arrays, OS bare-metal imaging (WDS/MDT), and routine patch compliance across distributed server farms.
+        </li>
+      </ul>
+    </div>
+
+    <!-- 04. FLAGSHIP OPEN SOURCE -->
+    <div class="section-title">
+      <span class="tag-prefix">// 04</span>
+      <h2>Flagship Engineering Projects & Open Source Tools</h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-title">
+          <h3>NovaFlix</h3>
+          <a href="https://github.com/digdast/novaflix" target="_blank">github.com/digdast/novaflix ↗</a>
+        </div>
+        <div class="project-desc">
+          Sovereign next-generation open media platform & home theater engine (Plex / Jellyfin alternative) featuring 4K
+          HDR Direct Play, HTTP 206 Range streaming, built-in remote access, SyncPlay, and cross-platform download
+          portal.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">
+          <h3>AegisDNS</h3>
+          <a href="https://github.com/digdast/aegisdns" target="_blank">github.com/digdast/aegisdns ↗</a>
+        </div>
+        <div class="project-desc">
+          Next-generation recursive DNS resolver & RFC 8484 DNS-over-HTTPS (DoH) engine traversing ICANN root hints with
+          zero telemetry, in-memory threat defense (227k+ active threat/ad rules), and real-time cyber command center.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">
+          <h3>Hermes Autonomous Agent Swarm & Paperclip Control Plane</h3>
+          <a href="https://github.com/digdast" target="_blank">github.com/digdast ↗</a>
+        </div>
+        <div class="project-desc">
+          Autonomous multi-agent engineering swarm (Atlas, Vega, Forge, Hermes, Sentinel) integrated with local NVIDIA
+          GeForce RTX 5070 GPU acceleration, live episodic skill synthesis, and bidirectional Telegram Bot command &
+          dispatch streaming without truncation.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">
+          <h3>SynapseFlow</h3>
+          <a href="https://github.com/digdast/synapseflow" target="_blank">github.com/digdast/synapseflow ↗</a>
+        </div>
+        <div class="project-desc">
+          AI-native visual DAG workflow automation engine built as a lightweight, zero-failure alternative to n8n.
+          Features native Ollama LLM nodes, Hermes Agent bridge nodes, webhook triggers, and low-latency execution.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">
+          <h3>7-Node HA K3s Cluster & Ingress</h3>
+          <a href="https://resume.ertechlab.com" target="_blank">resume.ertechlab.com ↗</a>
+        </div>
+        <div class="project-desc">
+          Production 6-node K3s cluster (36 vCPUs / 56GB RAM, 50+ pods across 12 namespaces) with Authentik SSO,
+          Checkmk, 4-node Cloudflared DaemonSet, and 4-replica zero-downtime web application hosting.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">
+          <h3>Sovereign Dual-GPU AI & RAG</h3>
+          <a href="https://github.com/digdast" target="_blank">github.com/digdast ↗</a>
+        </div>
+        <div class="project-desc">
+          Self-hosted dual-GPU LLM & RAG platform (NVIDIA RTX 5070 + RTX 3060) running Ollama, Open WebUI with CUDA 12.4
+          ChromaDB vector embeddings & Faster-Whisper STT, and Paperclip AI agent orchestration.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">
+          <h3>Pulsearr & Renamarr</h3>
+          <a href="https://github.com/digdast/pulsearr" target="_blank">github.com/digdast/pulsearr ↗</a>
+        </div>
+        <div class="project-desc">
+          Asynchronous Python media suite unifying Sonarr, Radarr, and Prowlarr into an 85MB FastAPI/SQLite WAL daemon,
+          paired with a zero-config IMDb/TVMaze media organizer and 1-click undo ledger.
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-title">
+          <h3>PrintForge 3D & Intune Catalog</h3>
+          <a href="https://3dprinting.ertechlab.com" target="_blank">3dprinting.ertechlab.com ↗</a>
+        </div>
+        <div class="project-desc">
+          2-replica K3s 3D printing portal, calibration tutorials & model vault (3dprinting.ertechlab.com) + 58
+          production PowerShell Intune/Autopilot proactive remediation modules.
+        </div>
+      </div>
+    </div>
+
+    <!-- 05. CERTIFICATIONS -->
+    <div class="section-title">
+      <span class="tag-prefix">// 05</span>
+      <h2>Industry Certifications & Technical Credentials</h2>
+    </div>
+    <div class="card">
+      <div class="certs-wrap">
+        <div class="cert-pill">✓ Microsoft Certified: Azure Administrator Associate (AZ-104)</div>
+        <div class="cert-pill">✓ Microsoft 365 Certified: Administrator Expert (MS-102)</div>
+        <div class="cert-pill">✓ Microsoft Entra ID: Administration & Identity Security</div>
+        <div class="cert-pill">✓ CompTIA Network+ Certified</div>
+        <div class="cert-pill">✓ CompTIA Security+ Certified</div>
+        <div class="cert-pill">✓ Inter-Tel University: Telecommunications & VOIP Systems</div>
+      </div>
+    </div>
+
+    <footer>
+      ⚡ Hosted on 6-Node Kubernetes HA Cluster (Replicas: 4) &bull; Ingress by Traefik, NPM &amp; Cloudflared &bull;
+      Shared NFS Storage &bull; <a href="https://resume.ertechlab.com"
+        style="color: var(--accent-cyan); text-decoration: none;">resume.ertechlab.com</a>
+    </footer>
+
   </div>
 
-  <!-- SUMMARY -->
-  <div class="section-header">
-    <span class="tag-prefix">// 01</span>
-    <h2>Professional Profile & Architectural Focus</h2>
-  </div>
-  <p class="summary-text">
-    Results-driven <strong>Senior Cloud Architect and Systems Engineer</strong> with 20+ years of hands-on enterprise infrastructure experience designing, modernizing, and automating mission-critical systems across Microsoft Azure, Kubernetes, Sovereign AI/LLM platforms, Active Directory Domain Services, Linux, and multi-hypervisor virtualization clusters. Proven architectural track record deploying global multi-site Active Directory forests across 7 global data centers, engineering 5-stage financial CI/CD release pipelines with 99.999% SLA uptime, orchestrating a 6-node high-availability Kubernetes (K3s) cluster (36 vCPUs / 56GB RAM, 50+ pods across 12 namespaces), engineering dual-GPU local AI & RAG inference platforms, and implementing zero-touch endpoint provisioning via Microsoft Intune and Windows Autopilot. Creator of high-performance open-source platforms and engineering tools (<strong>NovaFlix, AegisDNS, Pulsearr, Renamarr, PrintForge, Proxmox Cluster Suite, 58+ Intune remediation modules</strong>) with deep expertise in PowerShell, Python, Proxmox VE clustering, and enterprise identity governance.
-  </p>
+  <div class="toast" id="toastBox">Copied to clipboard!</div>
 
-  <!-- TECHNICAL MATRIX -->
-  <div class="section-header">
-    <span class="tag-prefix">// 02</span>
-    <h2>Core Technical Competencies & Systems Matrix</h2>
-  </div>
-  <div class="tech-matrix">
-    <div class="matrix-box">
-      <div class="matrix-box-title">CLOUD & DIRECTORY ARCHITECTURE</div>
-      <div class="tech-pills">
-        <span class="pill highlight">Microsoft Azure</span>
-        <span class="pill highlight">Entra ID (Azure AD)</span>
-        <span class="pill highlight">Active Directory DS</span>
-        <span class="pill">Hybrid Identity (PHS/PTA)</span>
-        <span class="pill">VNets / NSGs</span>
-        <span class="pill">Azure Files</span>
-        <span class="pill">Group Policy (GPO)</span>
-        <span class="pill">Exchange Online</span>
-        <span class="pill">M365 Tenant Admin</span>
-      </div>
-    </div>
-
-    <div class="matrix-box">
-      <div class="matrix-box-title">CONTAINERS & HA KUBERNETES</div>
-      <div class="tech-pills">
-        <span class="pill highlight">6-Node K3s / K8s HA</span>
-        <span class="pill highlight">Dual Control-Plane etcd</span>
-        <span class="pill highlight">Traefik & NPM Ingress</span>
-        <span class="pill highlight">Cloudflared DaemonSets</span>
-        <span class="pill">50+ Pods / 12 Namespaces</span>
-        <span class="pill">NFS Persistent Storage</span>
-        <span class="pill">Klipper ServiceLB</span>
-        <span class="pill">Sysctl Kernel Tuning</span>
-      </div>
-    </div>
-
-    <div class="matrix-box">
-      <div class="matrix-box-title">VIRTUALIZATION, HYPERVISORS & SAN</div>
-      <div class="tech-pills">
-        <span class="pill highlight">Proxmox VE (5-Node HA)</span>
-        <span class="pill highlight">VMware vSphere / ESXi</span>
-        <span class="pill highlight">Storage Area Networks (SAN)</span>
-        <span class="pill highlight">Linux KVM</span>
-        <span class="pill">Citrix XenServer / XCP-NG</span>
-        <span class="pill">Microsoft Hyper-V</span>
-        <span class="pill">AVX2 Host Passthrough</span>
-        <span class="pill">Zero-Balloon Memory Tuning</span>
-        <span class="pill">NFS / Ceph / iSCSI</span>
-      </div>
-    </div>
-
-    <div class="matrix-box">
-      <div class="matrix-box-title">SOVEREIGN AI, DEVOPS & AUTOMATION</div>
-      <div class="tech-pills">
-        <span class="pill highlight">PowerShell 7+</span>
-        <span class="pill highlight">Python (Asyncio/FastAPI)</span>
-        <span class="pill highlight">Dual-GPU AI (Ollama/RAG)</span>
-        <span class="pill highlight">Open WebUI & Paperclip AI</span>
-        <span class="pill">CI/CD Release Pipelines</span>
-        <span class="pill">CUDA 12.4 / ChromaDB</span>
-        <span class="pill">Ansible & Terraform</span>
-        <span class="pill">Git / Systemd Daemons</span>
-      </div>
-    </div>
-
-    <div class="matrix-box">
-      <div class="matrix-box-title">ENDPOINT & DEVICE GOVERNANCE</div>
-      <div class="tech-pills">
-        <span class="pill highlight">Microsoft Intune (MDM/MAM)</span>
-        <span class="pill highlight">Windows Autopilot</span>
-        <span class="pill">SCCM / MECM</span>
-        <span class="pill">Win32 Packaging (.intunewin)</span>
-        <span class="pill">Proactive Remediations</span>
-        <span class="pill">BitLocker Key Escrow</span>
-        <span class="pill">Patch Compliance Governance</span>
-        <span class="pill">Windows 10/11 & macOS</span>
-      </div>
-    </div>
-
-    <div class="matrix-box">
-      <div class="matrix-box-title">ZERO TRUST, SSO, DNS & OBSERVABILITY</div>
-      <div class="tech-pills">
-        <span class="pill highlight">Authentik Enterprise SSO</span>
-        <span class="pill highlight">Checkmk & Reconya L2</span>
-        <span class="pill highlight">Pi-hole v6 DoH / Unbound</span>
-        <span class="pill">Nebula-Sync 3-Node DNS</span>
-        <span class="pill">Automated SSL (DNS-01)</span>
-        <span class="pill">Conditional Access / PIM</span>
-        <span class="pill">SAML 2.0 / OAuth / FIDO2</span>
-        <span class="pill">Defender for Cloud</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- EXPERIENCE -->
-  <div class="section-header">
-    <span class="tag-prefix">// 03</span>
-    <h2>Enterprise Infrastructure Experience</h2>
-  </div>
-
-  <!-- JOB 1 -->
-  <div class="experience-item">
-    <div class="exp-header">
-      <div class="exp-role">Senior IT Infrastructure Consultant • <span class="exp-company">O.S. Consulting, Inc.</span></div>
-      <div class="exp-meta">Remote | 2025 – Present</div>
-    </div>
-    <ul class="exp-bullets">
-      <li><strong>6-Node HA Kubernetes (K3s) Orchestration</strong>: Architected and deployed a 6-node HA K3s cluster (2 etcd/control-plane nodes + 4 workers, 36 vCPUs, 56GB RAM) hosting 50+ pods across 12 production namespaces (Authentik SSO, Checkmk, Pi-hole DoH/DNSSEC, Portainer, Tomcat 10.1, Reconya, PrintForge, Arr media suite); implemented 4-node Cloudflare Tunnel DaemonSets, Traefik & NPM ingress, kernel sysctl optimization, and shared NFS storage.</li>
-      <li><strong>Sovereign AI & Dual-GPU RAG Infrastructure</strong>: Engineered a dedicated dual-GPU AI platform (NVIDIA RTX 5070 12GB + RTX 3060 12GB) running Ollama local LLMs, Open WebUI with isolated CUDA 12.4 PyTorch acceleration for ChromaDB vector RAG embeddings & Faster-Whisper STT, and Paperclip AI multi-agent control plane orchestration.</li>
-      <li><strong>Proxmox VE Fleet & Workload Modernization</strong>: Administer a 5-node Proxmox VE HA cluster, executing live LXC-to-Kubernetes migrations (Apache Tomcat 10.1, Reconya L2 discovery), configuring 12-core AVX2 host passthrough and 4GB RAM tmpfs transcode buffers, and eliminating memory ballooning contention.</li>
-      <li><strong>Tri-Node DNSSEC/DoH & Automated SSL Lifecycle</strong>: Engineered a 3-node Pi-hole v6, Unbound recursive DNSSEC, and Cloudflare DoH sidecar cluster synced via Nebula-Sync; built automated Let's Encrypt wildcard SSL renewal pipelines via Cloudflare DNS-01 APIs and Kubernetes CronJobs.</li>
-      <li><strong>Hybrid Identity & Modern Endpoint Governance</strong>: Architect hybrid AD to Entra ID synchronizations with PHS, Seamless SSO, and Conditional Access; modernize legacy SCCM/GPO environments to Microsoft Intune with zero-touch Windows Autopilot.</li>
-      <li><strong>Tier 3 Root Cause Analysis (RCA) & Observability</strong>: Deployed Checkmk enterprise monitoring and Reconya continuous Layer-2 ARP/ICMP discovery; serve as principal escalation architect for complex hypervisor, directory, and network incidents.</li>
-    </ul>
-  </div>
-
-  <!-- JOB 2 -->
-  <div class="experience-item">
-    <div class="exp-header">
-      <div class="exp-role">Senior Systems Administrator & Infrastructure Architect • <span class="exp-company">BlueMatrix</span></div>
-      <div class="exp-meta">Durham, NC | 2018 – 2025</div>
-    </div>
-    <ul class="exp-bullets">
-      <li><strong>Global Multi-Site Active Directory Forest</strong>: Architected, built, and maintained enterprise Active Directory forest and domain infrastructure across 7 global data centers and regional offices; tuned multi-site replication topology, site-cost weighting, and distributed DNS to guarantee sub-second authentication worldwide.</li>
-      <li><strong>Multi-Hypervisor Virtualization & Storage Area Networks (SAN)</strong>: Administered and tuned high-density virtualization clusters across Linux KVM, Citrix XenServer, VMware vSphere/ESXi, and XCP-NG; architected and orchestrated enterprise Storage Area Networks (SAN), iSCSI/Fibre Channel LUNs, shared NFS arrays, vCPU scheduling, dynamic memory allocations, and automated snapshot replication.</li>
-      <li><strong>Azure Cloud Infrastructure & Automation</strong>: Spearheaded phased migrations transitioning mission-critical on-premises systems to Microsoft Azure; architected VNets, Network Security Groups (NSGs), Azure Virtual Machines, and custom Azure Automation Runbooks to govern automated compute scaling and patch compliance.</li>
-      <li><strong>Automated Identity Lifecycle Engineering</strong>: Developed robust PowerShell automation workflows connecting HR systems with AD DS and Entra ID, completely automating provisioning, RBAC group delegation, Microsoft 365 licensing, and zero-day offboarding security revocation.</li>
-    </ul>
-  </div>
-
-  <!-- JOB 3 -->
-  <div class="experience-item">
-    <div class="exp-header">
-      <div class="exp-role">DevOps Engineer & Systems Administrator • <span class="exp-company">StreamingEdge (Tradition America)</span></div>
-      <div class="exp-meta">New York, NY (Hybrid) | 2013 – 2018</div>
-    </div>
-    <ul class="exp-bullets">
-      <li><strong>Financial CI/CD Release Pipeline Engineering</strong>: Directed release engineering across a structured 5-stage deployment pipeline (DEV ➔ QA ➔ UAT ➔ Staging ➔ Production) for institutional financial trading systems, coordinating zero-downtime off-hours application releases and configuration verification.</li>
-      <li><strong>Mission-Critical Systems Reliability (99.999% SLA)</strong>: Engineered and administered high-availability Windows Server (2012–2022) and Linux (RHEL, CentOS, Ubuntu) server farms hosting high-throughput financial transaction engines, consistently maintaining five-nines (99.999%) SLA uptime.</li>
-      <li><strong>Clustered Virtualization & Storage Area Networks (SAN)</strong>: Managed fault-tolerant virtualization clusters across Microsoft Hyper-V and VMware vSphere backed by enterprise Storage Area Networks (SAN), configuring multi-path I/O (MPIO), multi-NIC teaming, virtual switch isolation, host failover clustering, and disaster recovery replication.</li>
-      <li><strong>Enterprise Networking & Perimeter Security</strong>: Designed and maintained high-throughput LAN/WAN routing, core switching, hardware firewalls, site-to-site IPsec VPN tunnels, and enterprise telecommunications infrastructure.</li>
-    </ul>
-  </div>
-
-  <!-- JOB 4 -->
-  <div class="experience-item">
-    <div class="exp-header">
-      <div class="exp-role">Senior Network Administrator • <span class="exp-company">Digital Network Development</span></div>
-      <div class="exp-meta">Peoria, IL | 1999 – 2011</div>
-    </div>
-    <ul class="exp-bullets">
-      <li><strong>Enterprise Windows Server Operations</strong>: Commissioned, upgraded, and administered physical enterprise servers spanning Windows NT 4.0, 2000, 2003, and 2008, managing Active Directory, Group Policy Objects, DNS, DHCP, and enterprise storage.</li>
-      <li><strong>Telecommunications & Core Networking</strong>: Engineered, programmed, and maintained managed Cisco switches, routers, multi-building wireless links, T1/T3 telecommunications circuits, and enterprise VOIP telephony platforms.</li>
-      <li><strong>Disaster Recovery & Tier 3 Escalation</strong>: Managed enterprise tape and NAS backup routines, storage arrays, OS bare-metal imaging (WDS/MDT), and routine patch compliance across distributed server farms.</li>
-    </ul>
-  </div>
-
-  <!-- FLAGSHIP PROJECTS & OPEN SOURCE -->
-  <div class="section-header">
-    <span class="tag-prefix">// 04</span>
-    <h2>Flagship Engineering Projects & Open Source Tools</h2>
-  </div>
-  <div class="projects-grid">
-    <div class="project-card">
-      <div class="project-title">
-        <span>NovaFlix (Creator & Architect)</span>
-        <a href="https://github.com/digdast/novaflix">github.com/digdast/novaflix</a>
-      </div>
-      <div class="project-desc">
-        Sovereign open media platform & home theater engine (Plex/Jellyfin alternative) with 4K HDR Direct Play, HTTP 206 Range streaming, built-in remote access, and SyncPlay.
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-title">
-        <span>AegisDNS (Creator & Architect)</span>
-        <a href="https://github.com/digdast/aegisdns">github.com/digdast/aegisdns</a>
-      </div>
-      <div class="project-desc">
-        Recursive DNS resolver & RFC 8484 DNS-over-HTTPS (DoH) engine traversing root hints with zero telemetry, 227k+ threat sinkhole rules, and real-time cyber UI.
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-title">
-        <span>6-Node HA K3s Cluster & Ingress</span>
-        <a href="https://resume.ertechlab.com">resume.ertechlab.com</a>
-      </div>
-      <div class="project-desc">
-        6-node K3s cluster (36 vCPUs / 56GB RAM, 50+ pods across 12 namespaces) with Authentik SSO, Checkmk, 4-node Cloudflared DaemonSet, and 4-replica HA web hosting.
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-title">
-        <span>Sovereign Dual-GPU AI & RAG</span>
-        <a href="https://github.com/digdast">Proxmox / AI Lab</a>
-      </div>
-      <div class="project-desc">
-        Dual-GPU LLM & RAG platform (RTX 5070 + RTX 3060) running Ollama, Open WebUI with CUDA 12.4 ChromaDB vector embeddings, and Paperclip AI agent orchestration.
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-title">
-        <span>Pulsearr & Renamarr (Creator)</span>
-        <a href="https://github.com/digdast/pulsearr">github.com/digdast/pulsearr</a>
-      </div>
-      <div class="project-desc">
-        Async Python media daemon unifying Sonarr/Radarr/Prowlarr in 85MB RAM (FastAPI/SQLite WAL) + zero-config IMDb/TVMaze media organizer with 1-click undo.
-      </div>
-    </div>
-    <div class="project-card">
-      <div class="project-title">
-        <span>PrintForge 3D & Intune Catalog</span>
-        <a href="https://3dprinting.ertechlab.com">3dprinting.ertechlab.com</a>
-      </div>
-      <div class="project-desc">
-        2-replica K3s 3D printing portal & model vault (3dprinting.ertechlab.com) + 58 open-source PowerShell Intune/Autopilot proactive remediation modules.
-      </div>
-    </div>
-  </div>
-
-  <!-- CERTIFICATIONS & CREDENTIALS -->
-  <div class="section-header">
-    <span class="tag-prefix">// 05</span>
-    <h2>Industry Certifications & Technical Credentials</h2>
-  </div>
-  <div class="certs-row">
-    <div class="cert-badge">Microsoft Certified: Azure Administrator Associate (AZ-104)</div>
-    <div class="cert-badge">Microsoft 365 Certified: Administrator Expert (MS-102)</div>
-    <div class="cert-badge">Microsoft Entra ID: Administration & Identity Security</div>
-    <div class="cert-badge">CompTIA Network+ Certified</div>
-    <div class="cert-badge">CompTIA Security+ Certified</div>
-    <div class="cert-badge">Inter-Tel University: Telecommunications & VOIP Systems</div>
-  </div>
+  <script>
+    function copyText(text, msg) {
+      navigator.clipboard.writeText(text);
+      const toast = document.getElementById('toastBox');
+      toast.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.reme('s2500);
+    }
+  </script>
 
 </body>
+
 </html>

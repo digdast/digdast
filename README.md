@@ -1,5 +1,9 @@
 <div align="center">
 
+<a href="https://ertechlab.com">
+  <img src="ertechlab-logo-v4-terminal.svg" alt="ERTechLab" width="380" />
+</a>
+
 # ⚡ Efrain Rivas (`@digdast`)
 
 <a href="https://github.com/digdast">

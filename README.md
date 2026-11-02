@@ -7,6 +7,7 @@
 </a>
 
 <p align="center">
+  <a href="https://scripts.ertechlab.com" target="_blank"><img src="https://img.shields.io/badge/Script%20Vault-scripts.ertechlab.com-8B5CF6?style=for-the-badge&logo=powershell&logoColor=white" /></a>
   <a href="https://resume.ertechlab.com" target="_blank"><img src="https://img.shields.io/badge/Live%20Resume-resume.ertechlab.com-38BDF8?style=for-the-badge&logo=nginx&logoColor=white" /></a>
   <a href="https://raw.githubusercontent.com/digdast/digdast/main/Efrain_Rivas_SysAdmin_Resume.pdf" target="_blank"><img src="https://img.shields.io/badge/Download-PDF%20Resume%20(Tech%20Style)-DC2626?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" /></a>
   <a href="https://raw.githubusercontent.com/digdast/digdast/main/Efrain_Rivas_SysAdmin_Resume.docx"><img src="https://img.shields.io/badge/Download-Word%20Resume%20(.docx)-2563EB?style=for-the-badge&logo=microsoft-word&logoColor=white" /></a>

@@ -1,9 +1,5 @@
 <div align="center">
 
-<a href="https://ertechlab.com">
-  <img src="ertechlab-logo-v4-terminal.svg" alt="ERTechLab" width="380" />
-</a>
-
 # ⚡ Efrain Rivas (`@digdast`)
 
 <a href="https://github.com/digdast">
@@ -11,13 +7,21 @@
 </a>
 
 <p align="center">
-  <a href="https://notes.ertechlab.com" target="_blank"><img src="https://img.shields.io/badge/Homelab%20Notes-notes.ertechlab.com-10B981?style=for-the-badge&logo=gitbook&logoColor=white" /></a>
-  <a href="https://scripts.ertechlab.com" target="_blank"><img src="https://img.shields.io/badge/Script%20Vault-scripts.ertechlab.com-8B5CF6?style=for-the-badge&logo=powershell&logoColor=white" /></a>
-  <a href="https://resume.ertechlab.com" target="_blank"><img src="https://img.shields.io/badge/Live%20Resume-resume.ertechlab.com-38BDF8?style=for-the-badge&logo=nginx&logoColor=white" /></a>
-  <a href="https://raw.githubusercontent.com/digdast/digdast/main/Efrain_Rivas_SysAdmin_Resume.pdf" target="_blank"><img src="https://img.shields.io/badge/Download-PDF%20Resume%20(Tech%20Style)-DC2626?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" /></a>
-  <a href="https://raw.githubusercontent.com/digdast/digdast/main/Efrain_Rivas_SysAdmin_Resume.docx"><img src="https://img.shields.io/badge/Download-Word%20Resume%20(.docx)-2563EB?style=for-the-badge&logo=microsoft-word&logoColor=white" /></a>
-  <a href="RESUME.md"><img src="https://img.shields.io/badge/View-Online%20Markdown-0284C7?style=for-the-badge&logo=markdown&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/efrain-rivas-93455a10" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-Efrain%20Rivas-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://resume.ertechlab.com" target="_blank">
+    <img src="https://img.shields.io/badge/Live%20Resume-resume.ertechlab.com-38BDF8?style=for-the-badge&logo=nginx&logoColor=white" />
+  </a>
+  <a href="https://raw.githubusercontent.com/digdast/digdast/main/Efrain_Rivas_SysAdmin_Resume.pdf" target="_blank">
+    <img src="https://img.shields.io/badge/Download-PDF%20Resume%20(Tech%20Style)-DC2626?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" />
+  </a>
+  <a href="https://raw.githubusercontent.com/digdast/digdast/main/Efrain_Rivas_SysAdmin_Resume.docx">
+    <img src="https://img.shields.io/badge/Download-Word%20Resume%20(.docx)-2563EB?style=for-the-badge&logo=microsoft-word&logoColor=white" />
+  </a>
+  <a href="RESUME.md">
+    <img src="https://img.shields.io/badge/View-Online%20Markdown-0284C7?style=for-the-badge&logo=markdown&logoColor=white" />
+  </a>
+  <a href="https://www.linkedin.com/in/efrain-rivas-93455a10" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Efrain%20Rivas-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
 </p>
 
 <p align="center">
@@ -34,9 +38,8 @@
 
 I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressive enterprise infrastructure experience designing, modernizing, and automating mission-critical platforms across Microsoft Azure, Kubernetes, Active Directory Domain Services, Linux, and multi-hypervisor environments.
 
-- ☸️ **7-Node HA Kubernetes (K3s) & Cloudflared Mesh**: Orchestrated a 7-node K3s cluster (54 vCPUs / 82GB RAM, 55+ pods across 14 namespaces) with dual etcd control planes, 4-node Cloudflare Tunnel DaemonSets, Traefik & NPM ingress, Authentik SSO, Checkmk, Reconya, Tomcat 10.1, PrintForge 3D, and 4-replica zero-downtime microservices ([resume.ertechlab.com](https://resume.ertechlab.com)).
-- 🧠 **Sovereign Dual-GPU AI, Ollama & Multi-Agent Swarm**: Engineered a dedicated dual-GPU AI platform (NVIDIA RTX 5070 Blackwell 12GB + RTX 3060 12GB) running Ollama local LLMs with Flash-Attention (90+ tok/sec), Hermes self-improving autonomous agent swarm, Paperclip AI orchestrator, and bidirectional Telegram Bot command & dispatch streaming without message truncation.
-- ⚡ **Creator of [SynapseFlow](https://github.com/digdast/synapseflow)**: AI-native visual DAG workflow automation engine built as a lightweight, zero-failure alternative to n8n with native Ollama nodes, Hermes Agent bridges, and webhook triggers.
+- ☸️ **7-Node HA Kubernetes (K3s) & Cloudflared Mesh**: Orchestrated a 7-node K3s cluster (3-node etcd quorum + 4 workers, 54 vCPUs / 82GB RAM, 55+ pods across 14 namespaces) with 4-node Cloudflare Tunnel DaemonSets, Traefik & NPM ingress, Authentik SSO, Checkmk, Reconya, Tomcat 10.1, PrintForge 3D, and 4-replica zero-downtime microservices ([resume.ertechlab.com](https://resume.ertechlab.com)).
+- 🧠 **Sovereign Dual-GPU AI, RAG & Autonomous Agent Swarms**: Engineered a dedicated dual-GPU AI platform (NVIDIA RTX 5070 Blackwell + RTX 3060) running Ollama (90+ tok/sec Flash-Attention), Open WebUI with CUDA ChromaDB vector RAG embeddings & Faster-Whisper STT, Hermes 5-agent autonomous engineering swarm, and [SynapseFlow](https://github.com/digdast/synapseflow) visual DAG workflow automation.
 - 🖥️ **Proxmox VE & Hypervisor Fleet Optimization**: 5-node HA Proxmox VE clustering with 12-core AVX2 host passthrough, LXC-to-K8s migrations, zero-downtime memory tuning (balloon contention eliminated), and enterprise backup automation.
 - 🛡️ **DNSSEC, DoH & Automated SSL/TLS Lifecycle**: Tri-node synchronized Pi-hole v6, Unbound recursive DNSSEC, and Cloudflare DoH sidecar cluster replicated via Nebula-Sync with automated Cloudflare DNS-01 Let's Encrypt wildcard SSL renewals.
 - 🌐 **Global Active Directory Architecture**: Designed, built, and maintained the enterprise Active Directory forest and multi-site replication topology across **7 global data centers** and regional offices for BlueMatrix.
@@ -55,65 +58,65 @@ I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressi
 ### 🌟 Featured Flagship Projects
 
 <table align="center" width="100%">
-<tr>
-<td width="50%" valign="top">
-<h3 align="center"><a href="https://github.com/digdast/novaflix">🎬 NovaFlix</a></h3>
-<p align="center">
-<img src="https://img.shields.io/badge/Python-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-<img src="https://img.shields.io/badge/Streaming-4K%20HDR%20DirectPlay-E50914?style=flat-square" />
-<img src="https://img.shields.io/badge/Alternative-Plex%20%7C%20Jellyfin-brightgreen?style=flat-square" />
-</p>
-<p>Sovereign Next-Gen Open Media Platform featuring 4K HDR Direct Play, HTTP 206 Range streaming, built-in remote access, SyncPlay watch party, and multi-platform download portal.</p>
-</td>
-<td width="50%" valign="top">
-<h3 align="center"><a href="https://github.com/digdast/aegisdns">🛡️ AegisDNS</a></h3>
-<p align="center">
-<img src="https://img.shields.io/badge/DNS-RFC%208484%20DoH-0284C7?style=flat-square" />
-<img src="https://img.shields.io/badge/Threat%20Sinkhole-227k%2B%20Rules-red?style=flat-square" />
-<img src="https://img.shields.io/badge/Cache-Sub--0.5ms-brightgreen?style=flat-square" />
-</p>
-<p>Next-Generation recursive DNS sinkhole and RFC 8484 DNS-over-HTTPS resolver traversing ICANN root hints directly with zero telemetry, high-throughput caching, and real-time cyber UI.</p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3 align="center"><a href="https://github.com/digdast/pulsearr">⚡ Pulsearr</a></h3>
-<p align="center">
-<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/FastAPI-Async-009688?style=flat-square&logo=fastapi&logoColor=white" />
-<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" />
-</p>
-<p>Next-Gen Asynchronous Python Media PVR combining <b>Sonarr (TV)</b>, <b>Radarr (Movies)</b>, and <b>Prowlarr (Trackers Hub)</b> into a unified ultra-fast daemon. 10x memory reduction (85MB vs 1.2GB .NET stack).</p>
-</td>
-<td width="50%" valign="top">
-<h3 align="center"><a href="https://github.com/digdast/renamarr">🎬 Renamarr</a></h3>
-<p align="center">
-<img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/FastAPI-REST-009688?style=flat-square&logo=fastapi&logoColor=white" />
-<img src="https://img.shields.io/badge/FileBot-Alternative-purple?style=flat-square" />
-</p>
-<p>Modern, free open-source media organizer. Interactive side-by-side diff table, zero-config IMDb & TVMaze metadata matching, remote CLI agent, UNC network shares, and 1-click batch undo ledger.</p>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3 align="center"><a href="https://github.com/digdast/proxmox-cluster-suite">🖥️ Proxmox Cluster Suite</a></h3>
-<p align="center">
-<img src="https://img.shields.io/badge/Proxmox-HA%20Cluster-E57000?style=flat-square&logo=proxmox&logoColor=white" />
-<img src="https://img.shields.io/badge/Nodes-5%20Physical-blue?style=flat-square" />
-<img src="https://img.shields.io/badge/Web%20Dashboard-Port%207880-brightgreen?style=flat-square" />
-</p>
-<p>Automated enterprise optimization, no-subscription repo activation, nag dialog removal, CPU performance governors, and real-time live telemetry dashboard for 5-node Proxmox HA clusters.</p>
-</td>
-<td width="50%" valign="top">
-<h3 align="center"><a href="https://github.com/digdast/Intune-scripts">📦 Intune-scripts</a></h3>
-<p align="center">
-<img src="https://img.shields.io/badge/PowerShell-5.1%2B%20%7C%207%2B-5391FE?style=flat-square&logo=powershell&logoColor=white" />
-<img src="https://img.shields.io/badge/Intune-58%20Scripts-0078D4?style=flat-square&logo=microsoft&logoColor=white" />
-</p>
-<p>Comprehensive enterprise catalog of <b>58 production Intune automation scripts</b> spanning Autopilot, BitLocker encryption, driver management, NDES certificates, Win32 apps, and Graph API administration.</p>
-</td>
-</tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/digdast/novaflix">🎬 NovaFlix</a></h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Python-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
+        <img src="https://img.shields.io/badge/Streaming-4K%20HDR%20DirectPlay-E50914?style=flat-square" />
+        <img src="https://img.shields.io/badge/Alternative-Plex%20%7C%20Jellyfin-brightgreen?style=flat-square" />
+      </p>
+      <p>Sovereign Next-Gen Open Media Platform featuring 4K HDR Direct Play, HTTP 206 Range streaming, built-in remote access, SyncPlay watch party, and multi-platform download portal.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/digdast/aegisdns">🛡️ AegisDNS</a></h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/DNS-RFC%208484%20DoH-0284C7?style=flat-square" />
+        <img src="https://img.shields.io/badge/Threat%20Sinkhole-227k%2B%20Rules-red?style=flat-square" />
+        <img src="https://img.shields.io/badge/Cache-Sub--0.5ms-brightgreen?style=flat-square" />
+      </p>
+      <p>Next-Generation recursive DNS sinkhole and RFC 8484 DNS-over-HTTPS resolver traversing ICANN root hints directly with zero telemetry, high-throughput caching, and real-time cyber UI.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/digdast/pulsearr">⚡ Pulsearr</a></h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/FastAPI-Async-009688?style=flat-square&logo=fastapi&logoColor=white" />
+        <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" />
+      </p>
+      <p>Next-Gen Asynchronous Python Media PVR combining <b>Sonarr (TV)</b>, <b>Radarr (Movies)</b>, and <b>Prowlarr (Trackers Hub)</b> into a unified ultra-fast daemon. 10x memory reduction (85MB vs 1.2GB .NET stack).</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/digdast/renamarr">🎬 Renamarr</a></h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/FastAPI-REST-009688?style=flat-square&logo=fastapi&logoColor=white" />
+        <img src="https://img.shields.io/badge/FileBot-Alternative-purple?style=flat-square" />
+      </p>
+      <p>Modern, free open-source media organizer. Interactive side-by-side diff table, zero-config IMDb & TVMaze metadata matching, remote CLI agent, UNC network shares, and 1-click batch undo ledger.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/digdast/proxmox-cluster-suite">🖥️ Proxmox Cluster Suite</a></h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Proxmox-HA%20Cluster-E57000?style=flat-square&logo=proxmox&logoColor=white" />
+        <img src="https://img.shields.io/badge/Nodes-5%20Physical-blue?style=flat-square" />
+        <img src="https://img.shields.io/badge/Web%20Dashboard-Port%207880-brightgreen?style=flat-square" />
+      </p>
+      <p>Automated enterprise optimization, no-subscription repo activation, nag dialog removal, CPU performance governors, and real-time live telemetry dashboard for 5-node Proxmox HA clusters.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/digdast/Intune-scripts">📦 Intune-scripts</a></h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/PowerShell-5.1%2B%20%7C%207%2B-5391FE?style=flat-square&logo=powershell&logoColor=white" />
+        <img src="https://img.shields.io/badge/Intune-58%20Scripts-0078D4?style=flat-square&logo=microsoft&logoColor=white" />
+      </p>
+      <p>Comprehensive enterprise catalog of <b>58 production Intune automation scripts</b> spanning Autopilot, BitLocker encryption, driver management, NDES certificates, Win32 apps, and Graph API administration.</p>
+    </td>
+  </tr>
 </table>
 
 ---
@@ -152,8 +155,8 @@ I am a **Senior Cloud Architect & Systems Engineer** with 20+ years of progressi
 ### 📊 GitHub Activity & Statistics
 
 <div align="center">
-  <img src="https://github-stats-extended.vercel.app/api?username=digdast&show_icons=true&theme=tokyonight&hide_border=false&count_private=true" width="48%" />
-  <img src="https://streak-stats.vercel.app?user=digdast&theme=tokyonight&hide_border=false" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=digdast&show_icons=true&theme=tokyonight&hide_border=false&count_private=true" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=digdast&theme=tokyonight&hide_border=false" width="48%" />
 </div>
 
 ---

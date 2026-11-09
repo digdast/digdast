@@ -359,7 +359,7 @@
     <h2>Professional Profile & Architectural Focus</h2>
   </div>
   <p class="summary-text">
-    Results-driven <strong>Senior Cloud Architect, DevOps Engineer, and Infrastructure Systems Administrator</strong> with 20+ years of hands-on enterprise experience designing, modernizing, and automating mission-critical systems across Microsoft Azure, High-Availability Kubernetes, Sovereign AI/LLM platforms, Active Directory Domain Services, Linux, and multi-hypervisor SAN clusters. Proven architectural track record deploying global multi-site Active Directory forests across 7 data centers, directing 5-stage financial CI/CD release pipelines with 99.999% SLA uptime, orchestrating a 7-node high-availability Kubernetes (K3s) cluster (3-node etcd quorum, 54 vCPUs / 82GB RAM, 55+ pods across 14 namespaces), engineering dual-GPU local AI & multi-agent inference platforms (90+ tok/sec Flash-Attention), and implementing zero-touch endpoint provisioning via Microsoft Intune and Windows Autopilot. Creator of open-source infrastructure & DevOps platforms (<strong>NovaFlix, AegisDNS, SynapseFlow, Pulsearr, Renamarr, PrintForge, Proxmox Cluster Suite, 58+ Intune remediation modules</strong>) with deep expertise in PowerShell 7, Python (Asyncio/FastAPI), Terraform, Ansible, and Zero Trust identity governance.
+    Results-driven <strong>Senior Cloud Architect, DevOps Engineer, and Infrastructure Systems Administrator</strong> with 20+ years of hands-on enterprise experience designing, modernizing, and automating mission-critical systems across Microsoft Azure, High-Availability Kubernetes, Sovereign AI/LLM platforms, Active Directory Domain Services, Linux, and multi-hypervisor SAN clusters. Proven architectural track record deploying global multi-site Active Directory forests across 7 data centers, directing 5-stage financial CI/CD release pipelines with 99.999% SLA uptime, orchestrating a 10-node high-availability Kubernetes (K3s) cluster (5-node etcd quorum + 5 workers, 72 vCPUs / 84GB RAM, 70+ pods across 14 namespaces), engineering dual-GPU local AI & multi-agent inference platforms (90+ tok/sec Flash-Attention), and implementing zero-touch endpoint provisioning via Microsoft Intune and Windows Autopilot. Creator of open-source infrastructure & DevOps platforms (<strong>NovaFlix, AegisDNS, SynapseFlow, Pulsearr, Renamarr, PrintForge, Proxmox Cluster Suite, 58+ Intune remediation modules</strong>) with deep expertise in PowerShell 7, Python (Asyncio/FastAPI), Terraform, Ansible, and Zero Trust identity governance.
   </p>
 
   <!-- TECHNICAL MATRIX -->
@@ -385,11 +385,11 @@
     <div class="matrix-box">
       <div class="matrix-box-title">CONTAINERS, GITOPS & HA KUBERNETES</div>
       <div class="tech-pills">
-        <span class="pill highlight">7-Node K3s / K8s HA Cluster</span>
-        <span class="pill highlight">3-Node Control-Plane etcd</span>
+        <span class="pill highlight">10-Node K3s / K8s HA Cluster</span>
+        <span class="pill highlight">5-Node Control-Plane etcd</span>
         <span class="pill highlight">Traefik & NPM Ingress</span>
         <span class="pill highlight">Cloudflared DaemonSets</span>
-        <span class="pill">55+ Pods / 14 Namespaces</span>
+        <span class="pill">70+ Pods / 14 Namespaces</span>
         <span class="pill">NVMe HostPath & NFS Storage</span>
         <span class="pill">Klipper ServiceLB</span>
         <span class="pill">Sysctl Kernel Tuning</span>
@@ -466,7 +466,7 @@
       <div class="exp-meta">Remote | 2025 – Present</div>
     </div>
     <ul class="exp-bullets">
-      <li><strong>7-Node HA Kubernetes (K3s) Orchestration</strong>: Architected and deployed a 7-node HA K3s cluster (3 etcd control-plane quorum nodes + 4 workers, 54 vCPUs, 82GB RAM) hosting 55+ pods across 14 production namespaces (Authentik SSO, Checkmk, Pi-hole DoH/DNSSEC, Portainer, Tomcat 10.1, Reconya, PrintForge, Arr suite); engineered 4-node Cloudflare Tunnel DaemonSets, Traefik & NPM ingress, kernel sysctl optimization, and NVMe/NFS storage.</li>
+      <li><strong>10-Node HA Kubernetes (K3s) Orchestration</strong>: Architected and deployed a 10-node HA K3s cluster (5 etcd control-plane quorum nodes + 5 workers, 72 vCPUs, 84GB RAM) hosting 70+ pods across 14 production namespaces (Authentik SSO, Checkmk, Pi-hole DoH/DNSSEC, Portainer, Tomcat 10.1, Reconya, PrintForge, Arr suite); engineered Cloudflare Tunnel DaemonSets, Traefik & NPM ingress, kernel sysctl optimization, and NVMe/NFS storage.</li>
       <li><strong>Sovereign AI, Dual-GPU RAG & Autonomous Agent Swarms</strong>: Engineered a dedicated dual-GPU AI platform (NVIDIA RTX 5070 Blackwell + RTX 3060) running Ollama (90+ tok/sec Flash-Attention), Open WebUI with CUDA ChromaDB vector RAG embeddings & Faster-Whisper STT, Hermes 5-agent autonomous engineering swarm (bidirectional Telegram Bot control), and SynapseFlow visual DAG automation.</li>
       <li><strong>Proxmox VE Fleet & Workload Modernization</strong>: Administer a 5-node Proxmox VE HA cluster, executing live LXC-to-Kubernetes migrations (Apache Tomcat 10.1, Reconya L2 discovery), configuring 12-core AVX2 host passthrough and 4GB RAM tmpfs transcode buffers, and eliminating hypervisor memory ballooning contention.</li>
       <li><strong>Tri-Node DNSSEC/DoH & Automated GitOps SSL Lifecycle</strong>: Engineered a 3-node Pi-hole v6, Unbound recursive DNSSEC, and Cloudflare DoH sidecar cluster synced via Nebula-Sync; built automated Let's Encrypt wildcard SSL renewal pipelines via Cloudflare DNS-01 APIs and Kubernetes CronJobs.</li>
@@ -553,11 +553,11 @@
     </div>
     <div class="project-card">
       <div class="project-title">
-        <span>7-Node HA K3s Cluster & Zero Trust Ingress</span>
+        <span>10-Node HA K3s Cluster & Zero Trust Ingress</span>
         <a href="https://resume.ertechlab.com">resume.ertechlab.com</a>
       </div>
       <div class="project-desc">
-        7-node K3s cluster (3-node etcd quorum, 54 vCPUs / 82GB RAM, 55+ pods across 14 namespaces) with Authentik SSO, Checkmk, 4-node Cloudflared DaemonSet, and 4-replica HA hosting.
+        10-node K3s cluster (5-node etcd quorum + 5 workers, 72 vCPUs / 84GB RAM, 70+ pods across 14 namespaces) with Authentik SSO, Checkmk, Cloudflared DaemonSet, and HA hosting.
       </div>
     </div>
     <div class="project-card">
